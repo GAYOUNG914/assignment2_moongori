@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url(../font/NotoSansCJKkr-Black.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url(../font/NotoSansCJKkr-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url(../font/NotoSansCJKkr-DemiLight.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url(../font/NotoSansCJKkr-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url(../font/NotoSansCJKkr-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url(../font/NotoSansCJKkr-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url(../font/NotoSansCJKkr-Thin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url(../font/NotoSansMonoCJKkr-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url(../font/NotoSansMonoCJKkr-Regular.otf) format("opentype");
+}
