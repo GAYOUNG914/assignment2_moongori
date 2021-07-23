@@ -1,48 +1,33 @@
 $(function () {
-  //drop down & underbar event
-  $(".nav > li").mouseover(function () {
-    let leftValue = $(this).offset().left - 10,
-      listWidth = $(this).width() + 20;
-    $(this).addClass("on");
-    $(this).find(".sub_gnb").addClass("on");
-    $(".header_bg").addClass("on");
-    $(".under_bar").addClass("on");
-    $(".under_bar").css({ left: leftValue, width: listWidth });
-  });
-  $(".header_bg").mouseout(function () {
-    $(".nav > li").removeClass("on");
-    $(".nav > li > .sub_gnb").removeClass("on");
-    $(".header_bg").removeClass("on");
-    $(".under_bar").removeClass("on");
-  });
-  $(".nav > li > .sub_gnb").mouseout(function () {
-    $(".nav > li").removeClass("on");
-    $(".nav > li > .sub_gnb").removeClass("on");
-    $(".header_bg").removeClass("on");
-    $(".under_bar").removeClass("on");
-  });
-
-  //unactive a tag
-  $('a[href="#"]').click(function (e) {
-    e.preventDefault();
-  });
-
-  //back to top
-  $(".back_to_top").click(function () {
-    let thisElem = $(this.hash),
-      offsetElem = thisElem.offset();
-    $("html,body").stop();
-    $("html,body").animate({ scrollTop: offsetElem.top }, 700);
-  });
-
-  //footer icon
-  $(".cooperation").click(function () {
-    if ($(".cooperation_list").height() == 0) {
-      $(".cooperation_list").addClass("on");
+  //main_gnb 의 main_nav 호버
+  $("header .main_gnb .main_nav > ul > li > a").hover(
+    function () {
       $(this).addClass("on");
-    } else {
-      $(".cooperation_list").removeClass("on");
+      $(this).next().removeClass("on"); //음.. 나중에 다시..
+    },
+    function () {
       $(this).removeClass("on");
     }
+  );
+
+  //sub_nav의 ul > dl > ul이 a호버시 나타내기
+  let dlHover = $("header .sub_nav > ul > li dl");
+  let atagHover = $("header .sub_nav > ul > li dl dd");
+  // let subWidth = $("header .sub_nav > ul > li > dl dd > ul");
+
+  // $(".category").mouseover(function () {
+  //   dlHover.addClass("on");
+  // });
+  // dlHover.mouseout(function () {
+  //   dlHover.removeClass("on");
+  // });
+
+  $(atagHover).mouseover(function () {
+    $(this).find("ul").addClass("on");
+    dlHover.addClass("on");
+  });
+  $(atagHover).mouseout(function () {
+    $(this).find("ul").removeClass("on");
+    dlHover.removeClass("on");
   });
 });
