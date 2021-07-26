@@ -12,6 +12,7 @@ header {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  height: 193px;
 }
 
 header .log_in {
@@ -223,6 +224,10 @@ header .sub_nav > ul > li:hover:after {
   display: inline-block;
 }
 
+header .sub_nav > ul > li:hover dl {
+  display: block;
+}
+
 header .sub_nav > ul > li:nth-of-type(2):after,
 header .sub_nav > ul > li:nth-of-type(3):after {
   content: "";
@@ -280,6 +285,8 @@ header .sub_nav > ul > li dl {
   top: 57px;
   left: -25px;
   border-radius: 0 0 10px 10px;
+  display: none;
+  z-index: 999;
 }
 
 header .sub_nav > ul > li dl.on {

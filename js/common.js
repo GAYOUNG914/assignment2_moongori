@@ -21,6 +21,12 @@ $(function () {
   // dlHover.mouseout(function () {
   //   dlHover.removeClass("on");
   // });
+  // dlHover.mouseenter(function () {
+  //   $(this).css("display", "block");
+  // });
+  // dlHover.mouseout(function () {
+  //   $(this).css("display", "none");
+  // });
 
   $(atagHover).mouseover(function () {
     $(this).find("ul").addClass("on");
