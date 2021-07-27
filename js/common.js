@@ -36,4 +36,14 @@ $(function () {
     $(this).find("ul").removeClass("on");
     dlHover.removeClass("on");
   });
+
+  //bookmark
+  $(".book_mark").click(function () {
+    // console.log($(this).children().attr("src")); 왜 =를 두 개 붙여야 실행되는거지..?
+    if ($(this).children().attr("src") == "./assets/img/main/icon-scrap-fill.png") {
+      $(this).children().attr("src", "./assets/img/main/icon-scrap-white.png");
+    } else {
+      $(this).children().attr("src", "./assets/img/main/icon-scrap-fill.png");
+    }
+  });
 });

@@ -413,3 +413,7 @@ header .sub_nav > ul > li:nth-child(2) dl dd > ul > li:first-child {
 header .sub_nav > ul > li:nth-child(2) dl dd > ul > li a:hover {
   color: #00b076;
 }
+
+footer {
+  margin-top: 96px;
+}
