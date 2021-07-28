@@ -4,14 +4,18 @@ body {
   height: 100%;
 }
 
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
-  margin-top: 32px;
-}
-
-.swiper-container div img {
-  width: 100%;
 }
 
 .swiper-slide {
@@ -34,9 +38,125 @@ body {
   align-items: center;
 }
 
+/*mySwiper*/
+.mySwiper > .swiper-wrapper > .swiper-slide > a {
+  display: inline-block;
+  width: 100%;
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-pagination {
+  width: 84px;
+  height: 32px;
+  margin: 0 auto;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 4px 14px;
+  color: #b8b6b4;
+  text-align: start;
+  left: calc(50% - 32px);
+  bottom: 0;
+}
+
+.swiper-pagination-current {
+  color: #1c1814;
+}
+
+.swiper-pagination-total:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 9px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/main/icon-plus.png) center no-repeat;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 100%;
+  padding: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/main/icon-chevron-right.png) center no-repeat;
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: calc(50% - 24px);
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 0;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 0;
+}
+.swiper-button-pause {
+  position: absolute;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e8e8e8;
+  border-radius: 100%;
+  cursor: pointer;
+  background-image: url(../img/main/icon-pause.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  left: calc(50% - 94px);
+  margin: 24px;
+}
+
+/*time_swiper*/
+.time_swiper {
+  margin-top: 32px;
+}
+
+.swiper-slide {
+  text-align: start;
+}
+
+.swiper-container.time_swiper {
+  padding: 0 24px;
+}
+
+.time_swiper .swiper-button-prev,
+.time_swiper .swiper-button-next {
+  top: 128px;
+}
+
+/*tap_swiper*/
+
+.swiper-container.tap_swiper {
+  padding: 0 24px;
 }

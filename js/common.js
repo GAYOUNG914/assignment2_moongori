@@ -13,20 +13,6 @@ $(function () {
   //sub_nav의 ul > dl > ul이 a호버시 나타내기
   let dlHover = $("header .sub_nav > ul > li dl");
   let atagHover = $("header .sub_nav > ul > li dl dd");
-  // let subWidth = $("header .sub_nav > ul > li > dl dd > ul");
-
-  // $(".category").mouseover(function () {
-  //   dlHover.addClass("on");
-  // });
-  // dlHover.mouseout(function () {
-  //   dlHover.removeClass("on");
-  // });
-  // dlHover.mouseenter(function () {
-  //   $(this).css("display", "block");
-  // });
-  // dlHover.mouseout(function () {
-  //   $(this).css("display", "none");
-  // });
 
   $(atagHover).mouseover(function () {
     $(this).find("ul").addClass("on");
@@ -45,5 +31,58 @@ $(function () {
     } else {
       $(this).children().attr("src", "./assets/img/main/icon-scrap-fill.png");
     }
+  });
+
+  //play & pause button
+  //   $(".swiper-button-pause").click(function () {
+  //     console.log($(this).css("background-image"));
+  //     if ($(this).css("background") == "url(../assets/img/main/icon-pause.png)") {
+  //       $(this).css("background", "url(../assets/img/main/icon-chevron-right.png)");
+  //       $(this).addClass(".swiper-button-play");
+  //       $(this).removeClass(".swiper-button-pause");
+  //     } else {
+  //       $(this).css("background", "url(../assets/img/main/icon-pause.png)");
+  //       $(this).removeClass(".swiper-button-play");
+  //       $(this).addClass(".swiper-button-pause");
+  //     }
+  //   });
+
+  //tap button
+  //첫번째 tap
+  $(".tap_fir li a").click(function () {
+    //현재선택되어있던 메뉴 초기화
+    $(".tap_fir li").removeClass("on");
+    $(".row_fir .tap").removeClass("on");
+    //선택된 메뉴 on 표시
+    $(this).parent().addClass("on");
+    //if구문
+    if ($(this).parent().attr("class").includes("tap_fir_fir_li")) {
+      $(".tap_fir_fir").addClass("on");
+    } else if ($(this).parent().attr("class").includes("tap_fir_sec_li")) {
+      $(".tap_fir_sec").addClass("on");
+    } else if ($(this).parent().attr("class").includes("tap_fir_thi_li")) {
+      $(".tap_fir_thi").addClass("on");
+    }
+  });
+  //두번째 tap
+  $(".tap_sec li a").click(function () {
+    //현재선택되어있던 메뉴 초기화
+    $(".tap_sec li").removeClass("on");
+    $(".row_sec .tap").removeClass("on");
+    //선택된 메뉴 on 표시
+    $(this).parent().addClass("on");
+    //if구문
+    if ($(this).parent().attr("class").includes("tap_sec_fir_li")) {
+      $(".tap_sec_fir").addClass("on");
+    } else if ($(this).parent().attr("class").includes("tap_sec_sec_li")) {
+      $(".tap_sec_sec").addClass("on");
+    } else if ($(this).parent().attr("class").includes("tap_sec_thi_li")) {
+      $(".tap_sec_thi").addClass("on");
+    }
+  });
+
+  //a tag 비활성화
+  $("a").click(function () {
+    return false;
   });
 });

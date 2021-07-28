@@ -202,48 +202,47 @@ header .sub_nav {
   position: absolute;
   top: 137px;
   padding-left: 62px;
-}
-
-header .sub_nav > ul {
-  position: relative;
-}
-header .sub_nav > ul:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-header .sub_nav > ul > li {
-  position: relative;
-  float: left;
-  margin-right: 16px;
-  padding: 16px 8px;
-}
-
-header .sub_nav > ul > li:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  // display: inline-block;
-  width: 100%;
-  height: 3px;
-  background: $primaryColor;
-  display: none;
-}
-
-header .sub_nav > ul > li:hover:after {
-  display: inline-block;
-}
-
-header .sub_nav > ul > li:hover dl {
-  display: block;
-}
-
-header .sub_nav > ul > li:nth-of-type(2):after,
-header .sub_nav > ul > li:nth-of-type(3):after {
-  content: "";
-  display: none;
+  > ul {
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    > li {
+      position: relative;
+      float: left;
+      margin-right: 16px;
+      padding: 16px 8px;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        // display: inline-block;
+        width: 100%;
+        height: 3px;
+        background: $primaryColor;
+        display: none;
+      }
+      &:hover:after {
+        display: inline-block;
+      }
+      &:hover {
+        dl {
+          display: block;
+        }
+      }
+      &:nth-of-type(2):after {
+        content: "";
+        display: none;
+      }
+      &:nth-of-type(3):after {
+        content: "";
+        display: none;
+      }
+    }
+  }
 }
 
 header .sub_nav > ul > li > a {
@@ -412,4 +411,295 @@ header .sub_nav > ul > li:nth-child(2) dl dd > ul > li a:hover {
 
 footer {
   margin-top: 96px;
-}
+  background-color: #fff;
+  .talk_talk_wrap {
+    width: 100%;
+    background: #f8f8f8;
+    border-top: 1px solid #e8e8e8;
+    .talk_talk {
+      max-width: 1344px;
+      margin: 0 auto;
+      overflow: hidden;
+      height: 64px;
+      padding: 23px 0 21px 0;
+
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .consulting {
+        overflow: hidden;
+        float: left;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        dt {
+          float: left;
+          font-size: $fontRegular;
+          letter-spacing: -0.25px;
+          font-weight: bold;
+        }
+        dd {
+          float: left;
+          font-size: $fontRegular;
+          letter-spacing: -0.25px;
+          color: #605d5b;
+          margin-left: 16px;
+        }
+      }
+      .consult_click {
+        float: left;
+        a {
+          display: inline-block;
+          font-size: $fontRegular;
+          letter-spacing: -0.25px;
+          color: #3dae44;
+          transform: translateY(-4px);
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(../img/main/icon-talktalk.png) center no-repeat;
+            margin-left: 16px;
+            margin-right: 8px;
+            transform: translateY(4px);
+          }
+        }
+      }
+      .inquary {
+        overflow: hidden;
+        float: right;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        li {
+          float: left;
+          margin-right: 32px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            font-size: $fontRegular;
+            letter-spacing: -0.25px;
+          }
+        }
+      }
+    } //.talk_talk
+  } //talk_talk_wrap
+  .footer {
+    overflow: hidden;
+    padding: 32px 0 64px;
+    max-width: 1344px;
+    margin: 0 auto;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .footer_left {
+      float: left;
+      h2 {
+        width: 110px;
+        height: 30px;
+        background: url(../img/main/img-logo-eng-full.png) center no-repeat;
+        font-size: 0;
+      }
+      .slogan {
+        margin-top: 16px;
+        p {
+          &:first-child {
+            font-size: $fontMid;
+            letter-spacing: -0.5px;
+          }
+          &:last-child {
+            font-size: 24px;
+            letter-spacing: -1px;
+          }
+        }
+      }
+    } //.footer_left
+    .footer_mid {
+      float: left;
+      margin-left: 71px;
+      .footer_gnb {
+        overflow: hidden;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        li {
+          float: left;
+          margin-right: 32px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            font-size: $fontNormal;
+            letter-spacing: -0.5px;
+            font-weight: bold;
+          }
+        }
+      } //.footer_gnb
+      .return_add {
+        margin-top: 24px;
+        span {
+          font-size: $fontRegular;
+          color: #605d5b;
+          letter-spacing: -0.25px;
+          &:last-child {
+            margin-left: 12px;
+          }
+        }
+      } //.return_add
+      address {
+        margin-top: 16px;
+        ul {
+          overflow: hidden;
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+          li {
+            &:nth-child(2) {
+              a {
+                color: $mainColor;
+              }
+            }
+            span {
+              font-size: $fontSmall;
+              letter-spacing: -0.25px;
+              color: #8e8c8a;
+              margin-left: 12px;
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+            a {
+              font-size: $fontSmall;
+              letter-spacing: -0.25px;
+              color: #8e8c8a;
+              margin-left: 12px;
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      } //address
+      .documents {
+        overflow: hidden;
+        margin-top: 16px;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        li {
+          float: left;
+          &:first-child:after {
+            content: "|";
+            margin: 0 12px;
+            color: #e8e8e8;
+          }
+          &:nth-child(2) {
+            a {
+              color: $mainColor;
+            }
+          }
+          a {
+            font-size: $fontSmall;
+            letter-spacing: -0.25px;
+            color: #8e8c8a;
+          }
+        }
+      } //documents
+      .copyright {
+        display: inline-block;
+        margin-top: 16px;
+        font-size: $fontSmall;
+        color: #b8b6b4;
+        letter-spacing: -0.25px;
+      }
+    } //footer_mid
+    .footer_right {
+      float: right;
+      .qr_code {
+        position: relative;
+        padding-left: 72px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: inline-block;
+          background: url(../img/main/img_qr.png) left top no-repeat;
+          width: 72px;
+          height: 72px;
+        }
+        dl {
+          margin-left: 12px;
+          dt {
+            font-size: $fontNormal;
+            letter-spacing: -0.5px;
+            font-weight: bold;
+          }
+          dd {
+            margin-top: 8px;
+            font-size: $fontRegular;
+            letter-spacing: -0.25px;
+            color: #605d5b;
+          }
+        }
+      } //.qr_code
+      .sns_icons {
+        overflow: hidden;
+        margin-top: 32px;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        li {
+          float: left;
+          margin-right: 16px;
+          &:first-child {
+            a {
+              background: url(../img/main/icon-logo-facebook.png) center no-repeat;
+            }
+          }
+          &:nth-child(2) {
+            a {
+              background: url(../img/main/icon-logo-instagram.png) center no-repeat;
+            }
+          }
+          &:nth-child(3) {
+            a {
+              background: url(../img/main/icon-logo-naver-blog-text.png) center no-repeat;
+            }
+          }
+          &:last-child {
+            margin-right: 0;
+            a {
+              background: url(../img/main/icon-logo-youtube.png) center no-repeat;
+            }
+          }
+          a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #f1f1f1;
+            border-radius: 100%;
+          }
+        }
+      }
+    } //footer_right
+  } //.footer
+} //footer
