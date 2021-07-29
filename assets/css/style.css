@@ -1401,6 +1401,10 @@ main section.category_zone .round_cat .row li a img {
   margin-bottom: 16px;
 }
 
+main section.time_deal .time_deal_items {
+  width: 304px;
+}
+
 main section.time_deal .sec_tit {
   display: inline-block;
 }

@@ -46,6 +46,14 @@
   border-radius: 100%;
   background: #fff;
 }
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: #fff;
+}
+
 /* .slick-next {
   transform: rotate(180deg);
 } */
@@ -106,6 +114,9 @@
 }
 .slick-next:before {
   content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../assets/img/main/icon-chevron-right.png) center no-repeat;
 }
 [dir="rtl"] .slick-next:before {
   content: "";
