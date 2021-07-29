@@ -245,9 +245,8 @@ main section.popular_items .row .tap.on {
 }
 
 main section.popular_items .row .tap .item_popular {
-  width: 100%;
+  width: 236px;
   height: 352px;
-  margin-top: 32px;
   border-radius: 4px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
@@ -414,8 +413,8 @@ main section.recommend_brand {
 
 main section.recommend_brand .rec_con_wrap {
   overflow: hidden;
-  width: 100%;
-  margin: 32px auto 0;
+  max-width: 1312px;
+  margin: 0 auto;
   height: 410px;
 }
 
@@ -430,7 +429,7 @@ main section.recommend_brand .rec_con_wrap .left_recommend {
   float: left;
   width: 640px;
   height: 100%;
-  margin-right: 32px;
+  margin-right: 16px;
   padding: 48px;
   background: url(../img/event/img-mo-cate.png) center no-repeat;
   background-size: cover;
@@ -487,15 +486,19 @@ main section.recommend_brand .rec_con_wrap .right_recommend ul:after {
 
 main section.recommend_brand .rec_con_wrap .right_recommend ul li {
   float: left;
-  width: calc(100% / 3 - 32px);
+  width: 192px;
   height: 192px;
   margin-right: 32px;
   background: url(../img/main/img-thumbnail.png) center no-repeat;
   border-radius: 4px;
 }
 
+main section.recommend_brand .rec_con_wrap .right_recommend ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
 main section.recommend_brand .rec_con_wrap .right_recommend ul li:nth-child(3) ~ li {
-  margin-top: 32px;
+  margin-top: 26px;
 }
 
 main section.recommend_brand .rec_con_wrap .right_recommend ul li:last-child {

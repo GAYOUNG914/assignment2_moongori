@@ -10,6 +10,16 @@ $(function () {
     }
   );
 
+  //
+  $("header .sub_nav > ul > li").hover(
+    function () {
+      $(this).addClass("on");
+    },
+    function () {
+      $(this).removeClass("on");
+    }
+  );
+
   //sub_nav의 ul > dl > ul이 a호버시 나타내기
   let dlHover = $("header .sub_nav > ul > li dl");
   let atagHover = $("header .sub_nav > ul > li dl dd");
@@ -22,6 +32,18 @@ $(function () {
     $(this).find("ul").removeClass("on");
     dlHover.removeClass("on");
   });
+
+  //.space hover
+  $(".space")
+    .parent()
+    .hover(
+      function () {
+        $(".sub_nav > ul > li > ul").css("display", "block");
+      },
+      function () {
+        $(".sub_nav > ul > li > ul").css("display", "none");
+      }
+    );
 
   //bookmark
   $(".book_mark").click(function () {
@@ -80,6 +102,12 @@ $(function () {
       $(".tap_sec_thi").addClass("on");
     }
   });
+  //tap의 display가 block이 되면 swiper 시작
+  // if ($(".tap").css("display") == "block") {
+  //   tap_swiper.play();
+  // } else {
+  //   tap_swiper.stop();
+  // }
 
   //a tag 비활성화
   $("a").click(function () {

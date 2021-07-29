@@ -182,7 +182,7 @@ header .main_gnb .icons > li:nth-child(2) > a {
 }
 
 header .main_gnb .icons > li:nth-child(3) > a {
-  background: url(../img/nav/icon-cart-default.png) center no-repeat;
+  background: url(../img/main/icon-cart-active.png) center no-repeat;
 }
 
 /*sub_nav*/
@@ -220,8 +220,13 @@ header .sub_nav > ul > li:after {
   display: none;
 }
 
-header .sub_nav > ul > li:hover:after {
+header .sub_nav > ul > li.on:after {
   display: inline-block;
+}
+
+header .sub_nav > ul > li.on > a {
+  color: #00b076;
+  font-weight: bold;
 }
 
 header .sub_nav > ul > li:hover dl {
@@ -264,8 +269,63 @@ header .sub_nav > ul > li > a.space:hover:after {
           transform: translateY(5px);
 }
 
-header .sub_nav > ul > li > a:hover {
+/*a.space*/
+header .sub_nav > ul > li > ul {
+  overflow: hidden;
+  position: absolute;
+  width: 392px;
+  height: 436px;
+  padding: 32px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  top: 57px;
+  left: 0px;
+  border-radius: 0 0 10px 10px;
+  display: none;
+  z-index: 999;
+}
+
+header .sub_nav > ul > li > ul > p {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  font-weight: bold;
+}
+
+header .sub_nav > ul > li > ul > li {
+  float: left;
+  margin-right: 24px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+header .sub_nav > ul > li > ul > li > a {
+  position: relative;
+  display: inline-block;
+  padding-top: 72px;
+  width: 64px;
+  color: #605d60;
+  font-size: 14px;
+}
+
+header .sub_nav > ul > li > ul > li > a:after {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 0;
+  top: 0;
+  background: url(../img/nav/img-thumbnail.png) center no-repeat;
+  margin-bottom: 8px;
+}
+
+header .sub_nav > ul > li > ul > li > a:hover {
   color: #00b076;
+  font-weight: bold;
+}
+
+header .sub_nav > ul > li > ul > li:nth-child(4n + 1) {
+  margin-right: 0;
 }
 
 header .sub_nav > ul > li:last-child {
@@ -399,6 +459,8 @@ header .sub_nav > ul > li dl dd > ul {
   width: 224px;
   padding-left: 32px;
   padding-top: 72px;
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
   visibility: hidden;
 }
 
