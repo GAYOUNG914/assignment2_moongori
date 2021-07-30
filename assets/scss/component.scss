@@ -66,35 +66,33 @@ main {
     border-bottom: 1px solid #e8e8e8;
     .round_cat {
       margin-top: 32px;
-      .row {
-        overflow: hidden;
-        text-align: center;
-        &:after {
-          content: "";
-          display: block;
-          clear: both;
-        }
+      overflow: hidden;
+      text-align: center;
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      li {
+        display: inline-block;
+        width: 120px;
+        margin-right: 48px;
+        float: left;
         &:last-child {
+          margin-right: 0;
+        }
+        &:nth-child(8) ~ li {
           margin-top: 32px;
         }
-        li {
-          display: inline-block;
-          width: calc(100% / 8 - 46px);
-          margin-right: 48px;
-          float: left;
-          &:last-child {
-            margin-right: 0;
-          }
-          a {
+        a {
+          width: 100%;
+          color: $mainColor;
+          font-size: $fontNormal;
+          margin-top: 16px;
+          letter-spacing: -0.5px;
+          img {
             width: 100%;
-            color: $mainColor;
-            font-size: $fontNormal;
-            margin-top: 16px;
-            letter-spacing: -0.5px;
-            img {
-              width: 100%;
-              margin-bottom: 16px;
-            }
+            margin-bottom: 16px;
           }
         }
       }
@@ -379,7 +377,7 @@ main {
         float: left;
         width: 640px;
         height: 100%;
-        margin-right: 16px;
+        margin-right: 32px;
         padding: 48px;
         background: url(../img/event/img-mo-cate.png) center no-repeat;
         background-size: cover;

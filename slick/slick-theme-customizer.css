@@ -112,12 +112,22 @@
   right: auto;
   left: -25px;
 }
-.slick-next:before {
+.slick-next:before,
+.slick-prev:before {
   content: "";
+  position: absolute;
   width: 24px;
   height: 24px;
   background: url(../assets/img/main/icon-chevron-right.png) center no-repeat;
+  bottom: 12px;
+  right: 10px;
 }
+
+.slick-prev:before {
+  background-image: url(../assets/img/main/icon-chevron-left.png);
+  right: 13px;
+}
+
 [dir="rtl"] .slick-next:before {
   content: "";
 }

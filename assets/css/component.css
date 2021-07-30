@@ -69,35 +69,32 @@ main section.category_zone {
 
 main section.category_zone .round_cat {
   margin-top: 32px;
-}
-
-main section.category_zone .round_cat .row {
   overflow: hidden;
   text-align: center;
 }
 
-main section.category_zone .round_cat .row:after {
+main section.category_zone .round_cat:after {
   content: "";
   display: block;
   clear: both;
 }
 
-main section.category_zone .round_cat .row:last-child {
-  margin-top: 32px;
-}
-
-main section.category_zone .round_cat .row li {
+main section.category_zone .round_cat li {
   display: inline-block;
-  width: calc(100% / 8 - 46px);
+  width: 120px;
   margin-right: 48px;
   float: left;
 }
 
-main section.category_zone .round_cat .row li:last-child {
+main section.category_zone .round_cat li:last-child {
   margin-right: 0;
 }
 
-main section.category_zone .round_cat .row li a {
+main section.category_zone .round_cat li:nth-child(8) ~ li {
+  margin-top: 32px;
+}
+
+main section.category_zone .round_cat li a {
   width: 100%;
   color: #1c1814;
   font-size: 16px;
@@ -105,7 +102,7 @@ main section.category_zone .round_cat .row li a {
   letter-spacing: -0.5px;
 }
 
-main section.category_zone .round_cat .row li a img {
+main section.category_zone .round_cat li a img {
   width: 100%;
   margin-bottom: 16px;
 }
@@ -433,7 +430,7 @@ main section.recommend_brand .rec_con_wrap .left_recommend {
   float: left;
   width: 640px;
   height: 100%;
-  margin-right: 16px;
+  margin-right: 32px;
   padding: 48px;
   background: url(../img/event/img-mo-cate.png) center no-repeat;
   background-size: cover;

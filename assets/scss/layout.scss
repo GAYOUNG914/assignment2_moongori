@@ -103,12 +103,19 @@ header .main_gnb > .right > .icons {
 }
 
 header .main_gnb h1 {
-  background: url(../img/nav/img-logo-eng-full.png) center no-repeat;
+  position: relative;
   margin-right: 48px;
   width: 139px;
   height: 39px;
   font-size: 0;
   transform: translateY(8px);
+}
+
+header .main_gnb h1 img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 header .main_gnb .main_nav > ul {
@@ -140,7 +147,9 @@ header .main_gnb .main_nav > ul > li > a.on {
   color: $primaryColor;
 }
 
-header .main_gnb .search {
+header fieldset {
+  display: inline-block;
+  float: left;
   border: none;
   border-bottom: 2px solid $mainColor;
   width: 320px;
@@ -148,17 +157,23 @@ header .main_gnb .search {
   padding: 12px 0 10px 8px;
 }
 
-header .main_gnb .search input[type="submit"] {
-  background: url(../img/nav/icon-search-bold.png) center no-repeat;
+header fieldset input {
+  border: none;
+}
+
+header fieldset button {
+  // background: url(../img/nav/icon-search-bold.png) center no-repeat;
   width: 28px;
   height: 28px;
   font-size: 0;
   float: right;
   cursor: pointer;
+  border: none;
+  font-size: 0;
 }
 
-header .main_gnb .search input {
-  border: none;
+header fieldset button img {
+  width: 100%;
 }
 
 header .main_gnb .icons {
@@ -182,10 +197,15 @@ header .main_gnb .icons > li:last-child {
 }
 
 header .main_gnb .icons > li > a {
+  position: relative;
   float: left;
-  background: url(../img/nav/icon-utillity.png) center no-repeat;
   width: 32px;
   height: 32px;
+  font-size: 0;
+}
+
+header .main_gnb .icons > li:first-child > a {
+  background: url(../img/nav/icon-utillity.png) center no-repeat;
 }
 
 header .main_gnb .icons > li:nth-child(2) > a {
@@ -193,7 +213,31 @@ header .main_gnb .icons > li:nth-child(2) > a {
 }
 
 header .main_gnb .icons > li:nth-child(3) > a {
-  background: url(../img/main/icon-cart-active.png) center no-repeat;
+  // background: url(../img/main/icon-cart-active.png) center no-repeat;
+}
+
+header .main_gnb .icons > li:nth-child(3) > a > img {
+  width: 100%;
+}
+
+header .main_gnb .icons > li:nth-child(3) > a > span {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  bottom: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  background: #ff5442;
+}
+
+header .main_gnb .icons > li:nth-child(3) > a > span:after {
+  content: "3";
+  position: absolute;
+  right: 6px;
+  bottom: 1px;
+  font-size: 8px;
+  color: #fff;
 }
 
 /*sub_nav*/
