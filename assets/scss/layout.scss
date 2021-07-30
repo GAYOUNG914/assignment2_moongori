@@ -319,7 +319,7 @@ header .sub_nav > ul > li > a.space:hover:after {
 
 /*a.space*/
 
-header .sub_nav > ul > li > ul {
+header .sub_nav > ul > li > .space_box {
   overflow: hidden;
   position: absolute;
   width: 392px;
@@ -334,20 +334,20 @@ header .sub_nav > ul > li > ul {
   z-index: 999;
 }
 
-header .sub_nav > ul > li > ul > p {
+header .sub_nav > ul > li > .space_box > p {
   font-size: $fontNormal;
   letter-spacing: -0.5px;
   font-weight: bold;
 }
 
-header .sub_nav > ul > li > ul > li {
+header .sub_nav > ul > li > .space_box > ul > li {
   float: left;
   margin-right: 24px;
   margin-top: 24px;
   text-align: center;
 }
 
-header .sub_nav > ul > li > ul > li > a {
+header .sub_nav > ul > li > .space_box > ul > li > a {
   position: relative;
   display: inline-block;
   padding-top: 72px;
@@ -356,7 +356,7 @@ header .sub_nav > ul > li > ul > li > a {
   font-size: $fontRegular;
 }
 
-header .sub_nav > ul > li > ul > li > a:after {
+header .sub_nav > ul > li > .space_box > ul > li > a:after {
   content: "";
   position: absolute;
   width: 64px;
@@ -367,12 +367,12 @@ header .sub_nav > ul > li > ul > li > a:after {
   margin-bottom: 8px;
 }
 
-header .sub_nav > ul > li > ul > li > a:hover {
+header .sub_nav > ul > li > .space_box > ul > li > a:hover {
   color: $primaryColor;
   font-weight: bold;
 }
 
-header .sub_nav > ul > li > ul > li:nth-child(4n + 1) {
+header .sub_nav > ul > li > .space_box > ul > li:nth-child(4n) {
   margin-right: 0;
 }
 

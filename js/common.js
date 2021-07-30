@@ -38,10 +38,10 @@ $(function () {
     .parent()
     .hover(
       function () {
-        $(".sub_nav > ul > li > ul").css("display", "block");
+        $(".sub_nav > ul > li > .space_box").css("display", "block");
       },
       function () {
-        $(".sub_nav > ul > li > ul").css("display", "none");
+        $(".sub_nav > ul > li > .space_box").css("display", "none");
       }
     );
 
