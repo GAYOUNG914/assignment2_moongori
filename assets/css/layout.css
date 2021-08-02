@@ -786,19 +786,18 @@ footer .footer .footer_right {
 }
 
 footer .footer .footer_right .qr_code {
-  position: relative;
-  padding-left: 72px;
+  overflow: hidden;
 }
 
-footer .footer .footer_right .qr_code:before {
+footer .footer .footer_right .qr_code:after {
   content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  background: url(../img/main/img_qr.png) left top no-repeat;
-  width: 72px;
-  height: 72px;
+  display: block;
+  clear: both;
+}
+
+footer .footer .footer_right .qr_code a {
+  float: left;
+  font-size: 0;
 }
 
 footer .footer .footer_right .qr_code dl {
@@ -860,4 +859,5 @@ footer .footer .footer_right .sns_icons li a {
   height: 40px;
   border: 1px solid #f1f1f1;
   border-radius: 100%;
+  font-size: 0;
 }

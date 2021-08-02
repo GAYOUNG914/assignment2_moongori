@@ -113,4 +113,9 @@ $(function () {
   $("a").click(function () {
     return false;
   });
+
+  //slick pause button
+  $(".slide-pause").click(function () {
+    $(".regular").slick("slickPause");
+  });
 });

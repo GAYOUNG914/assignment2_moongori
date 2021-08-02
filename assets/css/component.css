@@ -51,7 +51,7 @@ main section {
   margin-top: 64px;
 }
 
-main section .sec_tit {
+main section .sec_tit strong {
   font-size: 40px;
   color: #1c1814;
   font-weight: bold;
@@ -60,6 +60,10 @@ main section .sec_tit {
 
 main section:nth-child(2) {
   margin-top: 3s2px;
+}
+
+main section.regular div {
+  font-size: 0;
 }
 
 main section.category_zone {
@@ -108,7 +112,7 @@ main section.category_zone .round_cat li a img {
 }
 
 main section.time_deal .time_deal_items {
-  width: 304px;
+  width: 100%;
 }
 
 main section.time_deal .sec_tit {
@@ -307,7 +311,7 @@ main section.try_it ul.top_try_it:after {
 main section.try_it ul.top_try_it li {
   position: relative;
   float: left;
-  width: calc(100% / 3 - 32px);
+  width: 416px;
   height: 120px;
   margin-right: 32px;
   padding: 48px 32px 48px 152px;
@@ -356,19 +360,23 @@ main section.try_it ul.main_try_it:after {
   clear: both;
 }
 
-main section.try_it ul.main_try_it li {
+main section.try_it ul.main_try_it h3 {
   float: left;
+  display: inline-block;
+  width: 236px;
   margin-right: 33px;
-  width: calc(100% / 5 - 33px);
-}
-
-main section.try_it ul.main_try_it li:first-child {
   font-size: 32px;
   letter-spacing: -2px;
 }
 
-main section.try_it ul.main_try_it li:first-child span {
+main section.try_it ul.main_try_it h3 span {
   font-weight: bold;
+}
+
+main section.try_it ul.main_try_it li {
+  float: left;
+  margin-right: 33px;
+  width: 236px;
 }
 
 main section.try_it ul.main_try_it li:nth-child(5n) {
@@ -535,6 +543,10 @@ main section.recommend_brand .rec_con_wrap .right_recommend ul li:last-child:aft
   top: 76px;
 }
 
+main section.recommend_brand .rec_con_wrap .right_recommend ul li a {
+  font-size: 0;
+}
+
 main section.recommend_brand .information {
   overflow: hidden;
   margin-top: 96px;
@@ -548,7 +560,7 @@ main section.recommend_brand .information:after {
 
 main section.recommend_brand .information li.information_li {
   float: left;
-  width: calc(100% / 2 - 32px);
+  width: 640px;
   margin-right: 32px;
   padding: 32px;
   border: 1px solid #e8e8e8;
@@ -662,11 +674,12 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   border-radius: 4px 0 4px 0;
 }
 
-.item .img_wrapper span.book_mark {
+.item .img_wrapper .book_mark {
   position: absolute;
   bottom: 12px;
   right: 12px;
   cursor: pointer;
+  font-size: 0;
 }
 
 .item .img_wrapper img {
@@ -747,4 +760,69 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
 .item .stand_out span:nth-child(2) {
   margin-left: 12px;
   color: #605d5b;
+}
+
+.regular .slick-list.draggable {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.regular .slick-list.draggable .slick-slide {
+  width: 640px;
+  height: 400px;
+}
+
+.regular .slide-placeholder {
+  width: 640px;
+  height: 400px;
+}
+
+.regular .slide-placeholder img {
+  width: 640px;
+  height: 400px;
+}
+
+.regular li[role="presentation"] {
+  display: none;
+}
+
+.regular .pagingInfo {
+  display: inline-block;
+  width: 84px;
+}
+
+.time_deal_items .responsive .slick-list {
+  margin-right: -32px;
+}
+
+.time_deal_items .responsive .slick-list .slick-slide {
+  margin-right: 32px;
+}
+
+.popular .slick-prev {
+  left: -19px;
+}
+
+.popular .slick-list.draggable {
+  height: 370px;
+}
+
+.popular .slick-list.draggable .slick-track {
+  left: 6px;
+}
+
+.popular .slick-list {
+  margin-right: -32px;
+}
+
+.popular .slick-list .slick-slide {
+  margin-right: 32px;
+}
+
+.recommend .slick-prev {
+  left: -10px;
+}
+
+.recommend .slick-next {
+  right: -10px;
 }

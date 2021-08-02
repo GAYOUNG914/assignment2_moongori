@@ -741,17 +741,15 @@ footer {
     .footer_right {
       float: right;
       .qr_code {
-        position: relative;
-        padding-left: 72px;
-        &:before {
+        overflow: hidden;
+        &:after {
           content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          display: inline-block;
-          background: url(../img/main/img_qr.png) left top no-repeat;
-          width: 72px;
-          height: 72px;
+          display: block;
+          clear: both;
+        }
+        a {
+          float: left;
+          font-size: 0;
         }
         dl {
           margin-left: 12px;
@@ -806,6 +804,7 @@ footer {
             height: 40px;
             border: 1px solid #f1f1f1;
             border-radius: 100%;
+            font-size: 0;
           }
         }
       }
