@@ -296,6 +296,7 @@
         </div>
       </section>
       <span class="pagingInfo"></span>
+      <span class="pause"></span>
       <ul class="elipse_zone">
         <li><a href="#">구해줘홈즈</a></li>
         <li><a href="#">홈캠핑</a></li>
@@ -1967,8 +1968,11 @@
         // dots: true,
         infinite: false,
         speed: 300,
+        autoplay: true,
+        // autoplaySpeed: 1,
         slidesToShow: 5,
         slidesToScroll: 1,
+        // slickPause: true,
         responsive: [
           {
             breakpoint: 1024,
@@ -2034,6 +2038,10 @@
           // settings: "unslick"
           // instead of a settings object
         ],
+      });
+
+      $(".pause").on("click", function () {
+        $(".regular").slick("slickPause");
       });
     </script>
   </body>

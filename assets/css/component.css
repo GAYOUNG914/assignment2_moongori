@@ -19,7 +19,7 @@ main .mySwiper .swiper-slide img {
 }
 
 main .elipse_zone {
-  margin-top: 64px;
+  margin-top: 144px;
   width: 100%;
   height: 88px;
   padding: 24px 0;
@@ -767,9 +767,21 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   margin: 0 auto;
 }
 
-.regular .slick-list.draggable .slick-slide {
+.regular .slick-list.draggable .slick-track {
+  left: 8px;
+}
+
+.regular .slick-list.draggable .slick-track .slick-slide {
   width: 640px;
   height: 400px;
+}
+
+.regular .slick-next {
+  right: -3px;
+}
+
+.regular .slick-prev {
+  left: -9px;
 }
 
 .regular .slide-placeholder {
@@ -825,4 +837,35 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
 
 .recommend .slick-next {
   right: -10px;
+}
+
+.pagingInfo {
+  position: absolute;
+  left: 50%;
+  display: inline-block;
+  width: 84px;
+  height: 32px;
+  padding: 6px 16px;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  background: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.pagingInfo span {
+  font-size: 14px;
+  color: #b8b6b4;
+}
+
+.pause {
+  position: absolute;
+  left: 752px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  background: url(../img/main/icon-pause.png) center no-repeat;
+  cursor: pointer;
 }

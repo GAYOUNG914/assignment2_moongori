@@ -25,7 +25,7 @@ main {
     }
   }
   .elipse_zone {
-    margin-top: 64px;
+    margin-top: 144px;
     width: 100%;
     height: 88px;
     padding: 24px 0;
@@ -692,10 +692,19 @@ main {
   .slick-list.draggable {
     width: 1320px;
     margin: 0 auto;
-    .slick-slide {
-      width: 640px;
-      height: 400px;
+    .slick-track {
+      left: 8px;
+      .slick-slide {
+        width: 640px;
+        height: 400px;
+      }
     }
+  }
+  .slick-next {
+    right: -3px;
+  }
+  .slick-prev {
+    left: -9px;
   }
   .slide-placeholder {
     width: 640px;
@@ -762,4 +771,33 @@ main {
   //     }
   //   }
   // }
+}
+
+.pagingInfo {
+  position: absolute;
+  left: 50%;
+  display: inline-block;
+  width: 84px;
+  height: 32px;
+  padding: 6px 16px;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  background: #fff;
+  font-size: 14px;
+  text-align: center;
+  span {
+    font-size: 14px;
+    color: #b8b6b4;
+  }
+}
+.pause {
+  position: absolute;
+  left: 752px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  background: url(../img/main/icon-pause.png) center no-repeat;
+  cursor: pointer;
 }
