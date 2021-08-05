@@ -326,6 +326,21 @@
         <li><a href="#">라탄</a></li>
         <li><a href="#">코르크마개화분</a></li>
       </ul>
+      <section class="elipse_zone_slider slider">
+        <ul class="elipse_zone elipse_zone_mo">
+          <li><a href="#">구해줘홈즈</a></li>
+          <li><a href="#">홈캠핑</a></li>
+          <li><a href="#">코르크마개화분</a></li>
+          <li><a href="#">페인트</a></li>
+          <li><a href="#">라탄</a></li>
+          <li><a href="#">구해줘홈즈</a></li>
+          <li><a href="#">홈캠핑</a></li>
+          <li><a href="#">코르크마개화분</a></li>
+          <li><a href="#">페인트</a></li>
+          <li><a href="#">라탄</a></li>
+          <li><a href="#">코르크마개화분</a></li>
+        </ul>
+      </section>
       <section class="category_zone">
         <h2 class="sec_tit"><strong>즐겨찾는 카테고리</strong></h2>
         <ul class="round_cat">
@@ -2483,6 +2498,12 @@
 
       //sub_nav_slider
       $(".sub_nav_slider").slick({
+        slidesToShow: 1,
+        // centerMode: true,
+        variableWidth: true,
+      });
+
+      $(".elipse_zone_slider").slick({
         slidesToShow: 1,
         // centerMode: true,
         variableWidth: true,
