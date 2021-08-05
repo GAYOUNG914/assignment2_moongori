@@ -20,6 +20,15 @@ $(function () {
     }
   );
 
+  $("header .sub_nav_mo > ul > li").hover(
+    function () {
+      $(this).addClass("on");
+    },
+    function () {
+      $(this).removeClass("on");
+    }
+  );
+
   //sub_nav의 ul > dl > ul이 a호버시 나타내기
   let dlHover = $("header .sub_nav > ul > li dl");
   let atagHover = $("header .sub_nav > ul > li dl dd");

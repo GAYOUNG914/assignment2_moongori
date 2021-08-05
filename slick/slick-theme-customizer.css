@@ -1,5 +1,13 @@
 @charset 'UTF-8';
 
+.regular_mo .slick-prev {
+  display: none;
+}
+
+.regular_mo .slick-next {
+  display: none;
+}
+
 /* Arrows */
 .slick-prev,
 .slick-next {

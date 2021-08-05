@@ -289,14 +289,13 @@ header .sub_nav {
         content: "";
         display: none;
       }
+      > a {
+        display: inline-block;
+        height: 100%;
+        font-size: $fontNormal;
+      }
     }
   }
-}
-
-header .sub_nav > ul > li > a {
-  display: inline-block;
-  height: 100%;
-  font-size: $fontNormal;
 }
 
 header .sub_nav > ul > li > a.category:after,
