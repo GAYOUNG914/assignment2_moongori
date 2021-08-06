@@ -1032,18 +1032,13 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
     color: #00b076;
     font-weight: bold;
   }
-  header .sub_nav_slider .sub_nav_mo > ul > li:nth-of-type(2):after {
-    content: "";
-    display: none;
-  }
-  header .sub_nav_slider .sub_nav_mo > ul > li:nth-of-type(3):after {
-    content: "";
-    display: none;
-  }
   header .sub_nav_slider .sub_nav_mo > ul > li > a {
     display: inline-block;
     height: 100%;
     font-size: 16px;
+  }
+  main .regular_mo_wrap {
+    position: relative;
   }
   main .regular_mo_wrap .regular_mo {
     display: block;
@@ -1060,6 +1055,9 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   main .regular_mo_wrap .regular_mo .slick-next {
     display: none !important;
   }
+  main .regular_mo_wrap .regular_mo .slide-placeholder img {
+    width: 100%;
+  }
   main .regular_mo_wrap .regular_mo .slick-dots {
     display: none;
   }
@@ -1067,7 +1065,7 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
     position: absolute;
     padding: 6px 20px;
     right: 0;
-    top: 463px;
+    bottom: 0;
     width: 96px;
     height: 32px;
     border-radius: 4px 0 0 0;
@@ -1108,6 +1106,7 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   }
   main .elipse_zone_slider {
     margin-top: 32px;
+    padding-left: 15px;
   }
   main .elipse_zone_slider .elipse_zone_mo {
     margin-top: 0px;
@@ -1136,6 +1135,7 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
     border: none;
     padding-bottom: 32px;
     padding-top: 0;
+    padding-left: 15px;
   }
   main section.try_it .main_try_it_wrap:nth-of-type(2n-1) ul li:last-child {
     display: none;
@@ -1185,6 +1185,7 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
     margin-top: 32px;
     margin-bottom: 0;
     padding-bottom: 0;
+    padding-left: 15px;
     border: none;
   }
   main section.category_zone .sec_tit strong {
@@ -1286,6 +1287,7 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   main section.time_deal .time_deal_items .reponsive_mo {
     overflow: hidden;
     margin-top: 24px;
+    padding-left: 15px;
   }
   main section.time_deal .time_deal_items .reponsive_mo:after {
     content: "";
@@ -1337,6 +1339,9 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   main .mo_try_it {
     display: block;
   }
+  main section.popular_items {
+    padding-left: 15px;
+  }
   main section.popular_items .sec_tit strong {
     font-size: 20px;
     letter-spacing: normal;
@@ -1381,6 +1386,7 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   }
   main section.recommend_brand {
     margin-top: 32px;
+    padding-left: 15px;
   }
   main section.recommend_brand .sec_tit strong {
     font-size: 20px;
@@ -1425,6 +1431,7 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   }
   main .mo_try_it_wrap {
     margin-top: 32px;
+    padding-left: 15px;
   }
   main .mo_try_it_wrap .sec_tit strong {
     font-size: 20px;

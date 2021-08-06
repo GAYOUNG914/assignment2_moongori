@@ -722,7 +722,6 @@ main {
   .slide-placeholder {
     width: 640px;
     height: 400px;
-
     img {
       width: 640px;
       height: 400px;
@@ -972,14 +971,6 @@ main {
               color: $primaryColor;
               font-weight: bold;
             }
-            &:nth-of-type(2):after {
-              content: "";
-              display: none;
-            }
-            &:nth-of-type(3):after {
-              content: "";
-              display: none;
-            }
             > a {
               display: inline-block;
               height: 100%;
@@ -996,6 +987,7 @@ main {
   } //header
   main {
     .regular_mo_wrap {
+      position: relative;
       .regular_mo {
         display: block;
         border-bottom: 2px solid rgba(0, 0, 0, 0.2);
@@ -1012,7 +1004,7 @@ main {
         }
         .slide-placeholder {
           img {
-            // object-fit: contain;
+            width: 100%;
           }
         }
         .slick-dots {
@@ -1023,7 +1015,7 @@ main {
         position: absolute;
         padding: 6px 20px;
         right: 0;
-        top: 463px;
+        bottom: 0;
         width: 96px;
         height: 32px;
         border-radius: 4px 0 0 0;
@@ -1073,6 +1065,7 @@ main {
     }
     .elipse_zone_slider {
       margin-top: 32px;
+      padding-left: 15px;
       .elipse_zone_mo {
         margin-top: 0px;
         padding: 0;
@@ -1101,6 +1094,7 @@ main {
         border: none;
         padding-bottom: 32px;
         padding-top: 0;
+        padding-left: 15px;
         &:nth-of-type(2n-1) {
           ul {
             li {
@@ -1161,6 +1155,7 @@ main {
       margin-top: 32px;
       margin-bottom: 0;
       padding-bottom: 0;
+      padding-left: 15px;
       border: none;
       .sec_tit {
         strong {
@@ -1265,6 +1260,7 @@ main {
         .reponsive_mo {
           overflow: hidden;
           margin-top: 24px;
+          padding-left: 15px;
           &:after {
             content: "";
             display: block;
@@ -1326,6 +1322,7 @@ main {
       display: block;
     }
     section.popular_items {
+      padding-left: 15px;
       .sec_tit {
         strong {
           font-size: $fontMid;
@@ -1377,6 +1374,7 @@ main {
     } //section.popular_items
     section.recommend_brand {
       margin-top: 32px;
+      padding-left: 15px;
       .sec_tit {
         strong {
           font-size: $fontMid;
@@ -1423,6 +1421,7 @@ main {
     }
     .mo_try_it_wrap {
       margin-top: 32px;
+      padding-left: 15px;
       .sec_tit {
         strong {
           font-size: $fontMid;
