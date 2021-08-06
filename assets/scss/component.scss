@@ -9,6 +9,10 @@ $logInColor: #8e8c8a;
 $mainColor: #1c1814;
 $primaryColor: #00b076;
 
+body {
+  min-width: 360px;
+}
+
 main {
   max-width: 1344px;
   margin: 0 auto;
@@ -940,7 +944,7 @@ main {
       padding-left: 16px;
       .sub_nav_mo {
         display: block;
-        > ul {
+        ul {
           position: relative;
           overflow: hidden;
           &:after {
@@ -948,11 +952,18 @@ main {
             display: block;
             clear: both;
           }
-          > li {
+          .slick-prev {
+            display: none !important;
+          }
+          .slick-next {
+            display: none !important;
+          }
+          li {
             position: relative;
             float: left;
             margin-right: 16px;
             padding: 16px 8px;
+            text-align: center;
             &:after {
               content: "";
               position: absolute;
@@ -967,11 +978,11 @@ main {
             &.on:after {
               display: inline-block;
             }
-            &.on > a {
+            &.on a {
               color: $primaryColor;
               font-weight: bold;
             }
-            > a {
+            a {
               display: inline-block;
               height: 100%;
               font-size: $fontNormal;

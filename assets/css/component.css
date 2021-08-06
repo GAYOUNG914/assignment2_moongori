@@ -1,3 +1,7 @@
+body {
+  min-width: 360px;
+}
+
 main {
   max-width: 1344px;
   margin: 0 auto;
@@ -1000,22 +1004,29 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   header .sub_nav_slider .sub_nav_mo {
     display: block;
   }
-  header .sub_nav_slider .sub_nav_mo > ul {
+  header .sub_nav_slider .sub_nav_mo ul {
     position: relative;
     overflow: hidden;
   }
-  header .sub_nav_slider .sub_nav_mo > ul:after {
+  header .sub_nav_slider .sub_nav_mo ul:after {
     content: "";
     display: block;
     clear: both;
   }
-  header .sub_nav_slider .sub_nav_mo > ul > li {
+  header .sub_nav_slider .sub_nav_mo ul .slick-prev {
+    display: none !important;
+  }
+  header .sub_nav_slider .sub_nav_mo ul .slick-next {
+    display: none !important;
+  }
+  header .sub_nav_slider .sub_nav_mo ul li {
     position: relative;
     float: left;
     margin-right: 16px;
     padding: 16px 8px;
+    text-align: center;
   }
-  header .sub_nav_slider .sub_nav_mo > ul > li:after {
+  header .sub_nav_slider .sub_nav_mo ul li:after {
     content: "";
     position: absolute;
     left: 0;
@@ -1025,14 +1036,14 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
     background: #00b076;
     display: none;
   }
-  header .sub_nav_slider .sub_nav_mo > ul > li.on:after {
+  header .sub_nav_slider .sub_nav_mo ul li.on:after {
     display: inline-block;
   }
-  header .sub_nav_slider .sub_nav_mo > ul > li.on > a {
+  header .sub_nav_slider .sub_nav_mo ul li.on a {
     color: #00b076;
     font-weight: bold;
   }
-  header .sub_nav_slider .sub_nav_mo > ul > li > a {
+  header .sub_nav_slider .sub_nav_mo ul li a {
     display: inline-block;
     height: 100%;
     font-size: 16px;
