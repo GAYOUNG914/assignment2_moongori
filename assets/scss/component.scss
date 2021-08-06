@@ -853,6 +853,15 @@ main {
   .elipse_zone_slider {
     display: none;
   }
+  .round_cat_slider {
+    display: none;
+  }
+  .recommend_mo_slider {
+    display: none;
+  }
+  .footer_mo {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
@@ -1150,6 +1159,9 @@ main {
     }
     section.category_zone {
       margin-top: 32px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: none;
       .sec_tit {
         strong {
           font-size: 20px;
@@ -1158,10 +1170,14 @@ main {
       }
       .round_cat {
         margin-top: 16px;
+        display: none;
         li {
           width: 68px;
           margin-right: 12px;
-          &:nth-child(5) ~ &:nth-child(8) {
+          &:nth-child(4n) {
+            margin-right: 0;
+          }
+          &:nth-child(n + 5):nth-child(-n + 8) {
             margin-top: 16px;
           }
           &:nth-child(8) ~ li {
@@ -1170,12 +1186,23 @@ main {
           a {
             font-size: 14px;
             letter-spacing: -1.8px;
-            letter-spacing: normal;
             margin-top: 8px;
             img {
               margin-bottom: 0;
             }
           }
+        }
+      }
+      .round_cat_slider {
+        margin-top: 16px;
+        .round_cat_mo {
+          display: block;
+        }
+        .slick-prev {
+          display: none !important;
+        }
+        .slick-next {
+          display: none !important;
         }
       }
     }
@@ -1358,11 +1385,44 @@ main {
       .recommend {
         display: none;
       }
+      .recommend_mo_slider {
+        margin-top: 16px;
+        ul {
+          overflow: hidden;
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+          li {
+            float: left;
+            margin-right: 12px;
+            a {
+              display: inline-block;
+              width: 68px;
+              position: relative;
+              text-align: center;
+              padding-top: 72px;
+              &:after {
+                content: "";
+                position: absolute;
+                display: inline-block;
+                top: 0;
+                left: 0;
+                background: url(../img/mobile/img-thumbnail_25.png) center top no-repeat;
+                width: 68px;
+                height: 68px;
+              }
+            }
+          }
+        }
+      }
       .information {
         display: none;
       }
     }
     .mo_try_it_wrap {
+      margin-top: 32px;
       .sec_tit {
         strong {
           font-size: $fontMid;
@@ -1372,7 +1432,6 @@ main {
       .mo_try_it {
         overflow: hidden;
         margin-top: 16px;
-        padding-bottom: 32px;
         &:after {
           content: "";
           display: block;
@@ -1434,4 +1493,116 @@ main {
       cursor: pointer;
     }
   } //main
+  footer {
+    display: none;
+  }
+  .footer_mo {
+    display: block;
+    margin-top: 32px;
+    text-align: center;
+    .talk_mo {
+      height: 48px;
+      background: #f4f4f4;
+      padding: 8px;
+      .talk_consult_mo {
+        position: relative;
+        display: inline-block;
+        border: 1px solid #e8e8e8;
+        background: #fff;
+        padding: 7px 12px;
+        width: 156px;
+        height: 32px;
+        margin-right: 8px;
+        color: #605d5b;
+        font-size: 12px;
+        &:first-child {
+          color: $primaryColor;
+          &:before {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url(../img/mobile/icon-talktalk.png) center no-repeat;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    } //talk_mo
+    .foot_main_mo {
+      background: #fff;
+      padding-bottom: 32px;
+      ul {
+        overflow: hidden;
+        display: inline-block;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        li {
+          float: left;
+        }
+      }
+      .footer_gnb_mo {
+        padding: 11px 0;
+        border-bottom: 1px solid #f4f4f4;
+        li {
+          margin-right: 24px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            color: #8e8c8a;
+            font-size: 12px;
+            letter-spacing: normal;
+          }
+        }
+      } //foot_gnb_mo
+      .business_mo {
+        display: inline-block;
+        margin-top: 16px;
+        border: none;
+        cursor: ponter;
+        font-size: 12px;
+        color: $logInColor;
+        li {
+          display: none;
+        }
+      }
+      .footer_icon_mo {
+        margin-top: 16px;
+        li {
+          margin-right: 12px;
+          a {
+            display: inline-block;
+            font-size: 0;
+            width: 32px;
+            height: 32px;
+            background: url(../img/mobile/icon-footer-facebook.png) center no-repeat;
+          }
+        }
+      }
+      .list_mo {
+        margin-top: 16px;
+        li {
+          &:first-child:after {
+            content: "|";
+            margin: 0 8px;
+            color: $logInColor;
+          }
+          a {
+            color: $logInColor;
+            font-size: 10px;
+          }
+        }
+      }
+      .copyrights_mo {
+        display: block;
+        margin-top: 4px;
+        font-size: 10px;
+        color: #b8b6b4;
+      }
+    } //foot_main_mo
+  }
 } //media query

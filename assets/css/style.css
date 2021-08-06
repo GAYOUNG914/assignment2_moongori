@@ -2249,6 +2249,15 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   .elipse_zone_slider {
     display: none;
   }
+  .round_cat_slider {
+    display: none;
+  }
+  .recommend_mo_slider {
+    display: none;
+  }
+  .footer_mo {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
@@ -2504,6 +2513,9 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   }
   main section.category_zone {
     margin-top: 32px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
   }
   main section.category_zone .sec_tit strong {
     font-size: 20px;
@@ -2511,12 +2523,16 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   }
   main section.category_zone .round_cat {
     margin-top: 16px;
+    display: none;
   }
   main section.category_zone .round_cat li {
     width: 68px;
     margin-right: 12px;
   }
-  main section.category_zone .round_cat li:nth-child(5) ~ main section.category_zone .round_cat li:nth-child(8) {
+  main section.category_zone .round_cat li:nth-child(4n) {
+    margin-right: 0;
+  }
+  main section.category_zone .round_cat li:nth-child(n + 5):nth-child(-n + 8) {
     margin-top: 16px;
   }
   main section.category_zone .round_cat li:nth-child(8) ~ li {
@@ -2525,11 +2541,22 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   main section.category_zone .round_cat li a {
     font-size: 14px;
     letter-spacing: -1.8px;
-    letter-spacing: normal;
     margin-top: 8px;
   }
   main section.category_zone .round_cat li a img {
     margin-bottom: 0;
+  }
+  main section.category_zone .round_cat_slider {
+    margin-top: 16px;
+  }
+  main section.category_zone .round_cat_slider .round_cat_mo {
+    display: block;
+  }
+  main section.category_zone .round_cat_slider .slick-prev {
+    display: none !important;
+  }
+  main section.category_zone .round_cat_slider .slick-next {
+    display: none !important;
   }
   main section.time_deal {
     position: relative;
@@ -2691,8 +2718,43 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   main section.recommend_brand .recommend {
     display: none;
   }
+  main section.recommend_brand .recommend_mo_slider {
+    margin-top: 16px;
+  }
+  main section.recommend_brand .recommend_mo_slider ul {
+    overflow: hidden;
+  }
+  main section.recommend_brand .recommend_mo_slider ul:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  main section.recommend_brand .recommend_mo_slider ul li {
+    float: left;
+    margin-right: 12px;
+  }
+  main section.recommend_brand .recommend_mo_slider ul li a {
+    display: inline-block;
+    width: 68px;
+    position: relative;
+    text-align: center;
+    padding-top: 72px;
+  }
+  main section.recommend_brand .recommend_mo_slider ul li a:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background: url(../img/mobile/img-thumbnail_25.png) center top no-repeat;
+    width: 68px;
+    height: 68px;
+  }
   main section.recommend_brand .information {
     display: none;
+  }
+  main .mo_try_it_wrap {
+    margin-top: 32px;
   }
   main .mo_try_it_wrap .sec_tit strong {
     font-size: 20px;
@@ -2701,7 +2763,6 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
   main .mo_try_it_wrap .mo_try_it {
     overflow: hidden;
     margin-top: 16px;
-    padding-bottom: 32px;
   }
   main .mo_try_it_wrap .mo_try_it:after {
     content: "";
@@ -2758,5 +2819,115 @@ main section.recommend_brand .information li.information_li dl dd ul li a {
     background-color: #00b076;
     margin-top: 32px;
     cursor: pointer;
+  }
+  footer {
+    display: none;
+  }
+  .footer_mo {
+    display: block;
+    margin-top: 32px;
+    text-align: center;
+  }
+  .footer_mo .talk_mo {
+    height: 48px;
+    background: #f4f4f4;
+    padding: 8px;
+  }
+  .footer_mo .talk_mo .talk_consult_mo {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    padding: 7px 12px;
+    width: 156px;
+    height: 32px;
+    margin-right: 8px;
+    color: #605d5b;
+    font-size: 12px;
+  }
+  .footer_mo .talk_mo .talk_consult_mo:first-child {
+    color: #00b076;
+  }
+  .footer_mo .talk_mo .talk_consult_mo:first-child:before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(../img/mobile/icon-talktalk.png) center no-repeat;
+  }
+  .footer_mo .talk_mo .talk_consult_mo:last-child {
+    margin-right: 0;
+  }
+  .footer_mo .foot_main_mo {
+    background: #fff;
+    padding-bottom: 32px;
+  }
+  .footer_mo .foot_main_mo ul {
+    overflow: hidden;
+    display: inline-block;
+  }
+  .footer_mo .foot_main_mo ul:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .footer_mo .foot_main_mo ul li {
+    float: left;
+  }
+  .footer_mo .foot_main_mo .footer_gnb_mo {
+    padding: 11px 0;
+    border-bottom: 1px solid #f4f4f4;
+  }
+  .footer_mo .foot_main_mo .footer_gnb_mo li {
+    margin-right: 24px;
+  }
+  .footer_mo .foot_main_mo .footer_gnb_mo li:last-child {
+    margin-right: 0;
+  }
+  .footer_mo .foot_main_mo .footer_gnb_mo li a {
+    color: #8e8c8a;
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+  .footer_mo .foot_main_mo .business_mo {
+    display: inline-block;
+    margin-top: 16px;
+    border: none;
+    cursor: ponter;
+    font-size: 12px;
+    color: #8e8c8a;
+  }
+  .footer_mo .foot_main_mo .business_mo li {
+    display: none;
+  }
+  .footer_mo .foot_main_mo .footer_icon_mo {
+    margin-top: 16px;
+  }
+  .footer_mo .foot_main_mo .footer_icon_mo li {
+    margin-right: 12px;
+  }
+  .footer_mo .foot_main_mo .footer_icon_mo li a {
+    display: inline-block;
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+    background: url(../img/mobile/icon-footer-facebook.png) center no-repeat;
+  }
+  .footer_mo .foot_main_mo .list_mo {
+    margin-top: 16px;
+  }
+  .footer_mo .foot_main_mo .list_mo li:first-child:after {
+    content: "|";
+    margin: 0 8px;
+    color: #8e8c8a;
+  }
+  .footer_mo .foot_main_mo .list_mo li a {
+    color: #8e8c8a;
+    font-size: 10px;
+  }
+  .footer_mo .foot_main_mo .copyrights_mo {
+    display: block;
+    margin-top: 4px;
+    font-size: 10px;
+    color: #b8b6b4;
   }
 }
