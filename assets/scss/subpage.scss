@@ -1,0 +1,31 @@
+//font_size
+$fontSmall: 12px;
+$fontRegular: 14px;
+$fontNormal: 16px;
+$fontMid: 20px;
+
+//color
+$logInColor: #8e8c8a;
+$mainColor: #1c1814;
+$primaryColor: #00b076;
+
+//product_detail.html main start
+
+.state_page_wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  .state_page {
+    max-width: 1344px;
+    margin: 0 auto;
+    padding: 24px 0;
+  }
+}
+
+main.product_detail {
+  max-width: 1440px;
+  margin: 0 auto;
+  .subpage_contents_wrap {
+    max-width: 1344px;
+    margin: 0 auto;
+  }
+}

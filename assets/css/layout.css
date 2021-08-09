@@ -36,6 +36,7 @@ header .log_in > li {
 
 header .log_in > li > a {
   color: #8e8c8a;
+  font-size: 12px;
 }
 
 header .log_in > li:last-child:after {

@@ -312,7 +312,7 @@
             <img src="./assets/img/main_banner/img-mo-main-6@2x.png" alt="main_banner" />
           </div>
         </section>
-        <span class="pagingInfo_mo"></span>
+        <span class="pagingInfo_mo"> 1<span>/6</span>&nbsp;+ </span>
       </div>
       <span class="pagingInfo"></span>
       <span class="pause"></span>
@@ -330,7 +330,7 @@
         <li><a href="#">코르크마개화분</a></li>
       </ul>
       <section class="elipse_zone_slider slider">
-        <ul class="elipse_zone elipse_zone_mo">
+        <ul class="elipse_zone_mo">
           <li><a href="#">구해줘홈즈</a></li>
           <li><a href="#">홈캠핑</a></li>
           <li><a href="#">코르크마개화분</a></li>
@@ -2605,12 +2605,12 @@
       $(".sub_nav_slider ul").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        // centerMode: true,
+        // centerMode: false,
         variableWidth: true,
         infinite: false,
       });
 
-      $(".elipse_zone_slider").slick({
+      $(".elipse_zone_slider ul").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         // centerMode: false,
@@ -2633,11 +2633,12 @@
       });
 
       //recommend_mo_slider
-      $(".recommend_mo_slider").slick({
+      $(".recommend_mo_slider ul").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         // centerMode: true,
         variableWidth: true,
+        infinite: false,
       });
 
       //regular_mo controller
@@ -2649,6 +2650,7 @@
         if (!slick.$dots) {
           return;
         }
+
         //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
         var i = (currentSlide ? currentSlide : 0) + 1;
         // use dots to get some count information

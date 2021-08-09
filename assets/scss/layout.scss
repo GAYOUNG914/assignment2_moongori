@@ -46,6 +46,7 @@ header .log_in > li {
 
 header .log_in > li > a {
   color: $logInColor;
+  font-size: 12px;
 }
 
 header .log_in > li:last-child:after {
@@ -160,6 +161,10 @@ header fieldset {
 header fieldset input {
   border: none;
 }
+
+// header fieldset input::placeholder {
+//   font-size: 16px;
+// }
 
 header fieldset button {
   // background: url(../img/nav/icon-search-bold.png) center no-repeat;
