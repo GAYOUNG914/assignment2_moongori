@@ -16,8 +16,36 @@ $primaryColor: #00b076;
   margin: 0 auto;
   .state_page {
     max-width: 1344px;
-    margin: 0 auto;
+    margin: 0 62px;
     padding: 24px 0;
+    ul {
+      overflow: hidden;
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      li {
+        float: left;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          background: url(../img/subpage/icon-chevron-right.png) center no-repeat;
+          margin: 0 4px;
+          transform: translateY(4px);
+        }
+        &:first-child:before {
+          content: "";
+          display: none;
+        }
+        a {
+          color: $logInColor;
+          font-size: $fontRegular;
+        }
+      }
+    }
   }
 }
 
@@ -25,7 +53,113 @@ main.product_detail {
   max-width: 1440px;
   margin: 0 auto;
   .subpage_contents_wrap {
+    overflow: hidden;
     max-width: 1344px;
-    margin: 0 auto;
+    margin: 0 62px;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .top_left {
+      max-width: 752px;
+      float: left;
+      .gallery_wrap {
+        overflow: hidden;
+        width: 100%;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        .mySwiper2 {
+          max-width: 640px;
+          max-height: 640px;
+          margin: 0;
+          float: right;
+          .swiper-slide {
+            max-width: 640px;
+            max-height: 640px;
+            margin: 0;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .mySwiper {
+          max-width: 96px;
+          margin: 0;
+          padding: 0;
+          float: left;
+          margin-right: 16px;
+          .swiper-wrapper {
+            flex-direction: column;
+            .swiper-slide {
+              width: 96px !important;
+              height: 96px;
+              margin-right: 0;
+              margin-bottom: 8px;
+              cursor: pointer;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .story {
+        .story_slider {
+          margin-top: 16px;
+          li {
+            width: 236px;
+            a {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              p {
+                font-size: $fontNormal;
+                letter-spacing: -0.5px;
+                &:before {
+                  content: "";
+                  display: inline-block;
+                  width: 236px;
+                  height: 177px;
+                  background: url(../img/subpage/thumbnail-storyimg.png) center no-repeat;
+                  margin-bottom: 16px;
+                }
+              }
+              span {
+                display: inline-block;
+                font-size: $fontRegular;
+                color: #605d5b;
+                margin-top: 10px;
+                &:before {
+                  content: "";
+                  display: inline-block;
+                  width: 24px;
+                  height: 24px;
+                  background: url(../img/subpage/img-thumbnail.png) center no-repeat;
+                  margin-right: 8px;
+                  transform: translateY(6px);
+                }
+              }
+            }
+          }
+        }
+      }
+    } //top_left
+  } //.subpage_contents_wrap
+}
+
+.top_left_tit {
+  font-size: 24px;
+  font-weight: bold;
+  span {
+    display: inline-block;
+    transform: translateY(-2px);
+    margin-left: 8px;
+    font-size: $fontNormal;
+    color: $logInColor;
+    font-weight: normal;
   }
 }

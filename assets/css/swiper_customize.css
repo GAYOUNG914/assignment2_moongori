@@ -1,18 +1,3 @@
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -38,12 +23,6 @@ body {
   align-items: center;
 }
 
-/*mySwiper*/
-.swiper-wrapper > .swiper-slide > a {
-  display: inline-block;
-  width: 100%;
-}
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -51,177 +30,47 @@ body {
   object-fit: cover;
 }
 
-.mySwiper .swiper-pagination {
-  width: 84px;
-  height: 32px;
-  margin: 0 auto;
-  border: 1px solid #e8e8e8;
-  border-radius: 16px;
-  padding: 4px 14px;
-  color: #b8b6b4;
-  text-align: start;
-  left: calc(50% - 32px);
-  bottom: 0;
+body {
+  background: #000;
+  color: #000;
 }
 
-.mySwiper .swiper-pagination-current {
-  color: #1c1814;
-}
-
-.mySwiper .swiper-pagination-total:after {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  right: 9px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url(../img/main/icon-plus.png) center no-repeat;
-  margin-left: 8px;
-  cursor: pointer;
-}
-
-.mySwiper .swiper-button-next,
-.mySwiper .swiper-container-rtl .swiper-button-prev,
-.mySwiper .swiper-button-prev,
-.mySwiper .swiper-container-rtl .swiper-button-next {
-  top: 176px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  width: 48px;
-  height: 48px;
-  background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 100%;
-  padding: 12px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-}
-
-.swiper-button-next:after,
-.swiper-container-rtl .swiper-button-prev:after,
-.swiper-button-prev:after,
-.swiper-container-rtl .swiper-button-next:after {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: url(../img/main/icon-chevron-right.png) center no-repeat;
-}
-
-.swiper-button-prev:after,
-.swiper-container-rtl .swiper-button-next:after {
-  transform: rotate(180deg);
-}
-
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  right: 0;
-}
-
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  left: 0;
-}
-.mySwiper .swiper-button-pause {
-  position: absolute;
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  border: 1px solid #e8e8e8;
-  border-radius: 100%;
-  cursor: pointer;
-  background-image: url(../img/main/icon-pause.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  left: calc(50% - 94px);
-  margin: 24px;
-}
-
-/*time_swiper*/
-.time_swiper {
-  margin-top: 32px;
-  padding: 0 24px;
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper-slide {
-  text-align: start;
+  background-size: cover;
+  background-position: center;
 }
 
-.swiper-container.time_swiper {
-  padding: 0 24px;
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
 }
 
-.time_swiper .swiper-button-prev,
-.time_swiper .swiper-button-next {
-  top: 128px;
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
 }
 
-/*tap_swiper*/
-.tap_swiper {
-  padding: 0 24px;
-  margin-top: 32px;
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
 }
 
-.tap_swiper .swiper-container.tap_swiper {
-  padding: 0 24px;
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
 }
 
-.tap_swiper .swiper-button-prev,
-.tap_swiper .swiper-button-next {
-  top: calc(50% - 24px);
-}
-
-.tap_swiper.swiper-container {
-  width: 1370px;
-  height: 380px;
-}
-
-.tap_swiper .swiper-button-next,
-.tap_swiper .swiper-container-rtl .swiper-button-prev {
-  right: 0;
-}
-
-/*rec_swiper*/
-.rec_swiper {
-  margin-top: 32px;
-  padding: 0 24px 40px;
-}
-
-.rec_swiper .swiper-pagination {
-  width: auto;
-  height: auto;
-  margin: auto;
-  padding: 0;
-  border: none;
-  text-align: center;
-}
-
-.rec_swiper .swiper-pagination-fraction,
-.rec_swiper .swiper-pagination-custom,
-.rec_swiper .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 0;
-  left: 50%;
-}
-
-.rec_swiper .swiper-button-next,
-.rec_swiper .swiper-button-prev {
-  top: 203px;
-}
-
-.swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 0;
-  left: 650px;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: rgba(28, 24, 20, 0.6);
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
