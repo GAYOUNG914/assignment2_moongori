@@ -603,6 +603,37 @@ main.product_detail .subpage_contents_wrap .bottom_left .detail img {
   margin-top: 17px;
 }
 
+main.product_detail .subpage_contents_wrap .bottom_left .about_product {
+  margin-top: 48px;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_left .about_product thead {
+  border-bottom: 1px solid #1c1814;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_left .about_product thead tr {
+  font-size: 20px;
+  letter-spacing: -1px;
+  padding-bottom: 16px;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_left .about_product tbody {
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_left .about_product tbody tr th {
+  width: 200px;
+  padding-right: 24px;
+  font-size: 14px;
+  text-align: start;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_left .about_product tbody tr td {
+  font-size: 14px;
+  color: #605d5b;
+}
+
 .top_left_tit {
   font-size: 24px;
   font-weight: bold;
