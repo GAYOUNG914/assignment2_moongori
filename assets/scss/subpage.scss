@@ -512,6 +512,109 @@ main.product_detail {
           margin-top: 17px;
         }
       } //detail
+      .about_product {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 48px;
+        tr {
+          th {
+            text-align: start;
+            width: 216px;
+          }
+        }
+        thead {
+          tr {
+            th {
+              padding-bottom: 16px;
+              font-size: $fontMid;
+              letter-spacing: -1px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            &:first-child {
+              border-top: 1px solid $mainColor;
+              th {
+                padding-top: 24px;
+              }
+              td {
+                padding-top: 24px;
+              }
+            }
+            &:last-child {
+              border-bottom: 1px solid #e8e8e8;
+              th {
+                padding-bottom: 24px;
+              }
+              td {
+                padding-bottom: 24px;
+              }
+            }
+            th {
+              text-align: start;
+              padding-bottom: 16px;
+              font-size: $fontRegular;
+              letter-spacing: -1.25px;
+            }
+            td {
+              padding-bottom: 16px;
+              padding-left: 24px;
+              font-size: $fontRegular;
+              color: #605d5b;
+            }
+          }
+        }
+      } //about_product
+      section {
+        .section_tit {
+          width: 100%;
+          height: 48px;
+          .bottom_left_tit {
+            float: left;
+            line-height: 48px;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -1px;
+            span {
+              margin-left: 8px;
+              font-size: $fontNormal;
+              color: $logInColor;
+            }
+          }
+          .write {
+            float: right;
+            width: 160px;
+            height: 100%;
+            border: 1px solid $primaryColor;
+            border-radius: 4px;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: $fontNormal;
+            color: $primaryColor;
+          }
+        }
+      }
+      .section.section_review {
+        .section_tit {
+          .notice {
+            font-size: $fontRegular;
+            color: $logInColor;
+            span {
+              font-size: $fontRegular;
+              color: $mainColor;
+            }
+          }
+          .score {
+            width: 100%;
+            border-radius: 4px;
+            background: #f8f8f8;
+            margin: 32px 0;
+            .score_left {
+            }
+          }
+        }
+      }
     } //.bottom_left
   } //.subpage_contents_wrap
 }
