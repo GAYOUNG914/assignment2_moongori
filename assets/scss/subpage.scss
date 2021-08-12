@@ -512,33 +512,6 @@ main.product_detail {
           margin-top: 17px;
         }
       } //detail
-      .about_product {
-        margin-top: 48px;
-        thead {
-          border-bottom: 1px solid $mainColor;
-          tr {
-            font-size: 20px;
-            letter-spacing: -1px;
-            padding-bottom: 16px;
-          }
-        }
-        tbody {
-          padding-top: 8px;
-          padding-bottom: 24px;
-          tr {
-            th {
-              width: 200px;
-              padding-right: 24px;
-              font-size: $fontRegular;
-              text-align: start;
-            }
-            td {
-              font-size: $fontRegular;
-              color: #605d5b;
-            }
-          }
-        }
-      }
     } //.bottom_left
   } //.subpage_contents_wrap
 }
