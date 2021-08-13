@@ -595,26 +595,252 @@ main.product_detail {
           }
         }
       }
-      .section.section_review {
-        .section_tit {
-          .notice {
+      section.section_review {
+        .notice {
+          margin-top: 12px;
+          font-size: $fontRegular;
+          color: $logInColor;
+          letter-spacing: -1px;
+          span {
             font-size: $fontRegular;
-            color: $logInColor;
-            span {
-              font-size: $fontRegular;
-              color: $mainColor;
+            color: $mainColor;
+          }
+        }
+        .score {
+          overflow: hidden;
+          width: 100%;
+          padding: 36px 0;
+          border-radius: 4px;
+          background: #f8f8f8;
+          margin: 32px 0;
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+          .score_left {
+            float: left;
+            text-align: center;
+            padding: 0 136px;
+            p {
+              font-family: "Lato-bold";
+              font-size: 38px;
+              font-weight: bold;
+              span {
+                font-family: "Lato-light";
+                font-size: 38px;
+                color: #b8b6b4;
+                font-weight: normal;
+              }
+            }
+            ul {
+              overflow: hidden;
+              &:after {
+                content: "";
+                display: block;
+                clear: both;
+              }
+              li {
+                float: left;
+              }
             }
           }
-          .score {
-            width: 100%;
-            border-radius: 4px;
-            background: #f8f8f8;
-            margin: 32px 0;
-            .score_left {
+          .score_right {
+            float: left;
+            > ul {
+              > li {
+                &:nth-child(2) {
+                  .numbers_of_review {
+                    width: 180px;
+                    background: $primaryColor;
+                    &:after {
+                      content: "";
+                    }
+                  }
+                }
+                &:nth-child(3) {
+                  .numbers_of_review {
+                    width: 90px;
+                  }
+                }
+                &:nth-child(4) {
+                  .numbers_of_review {
+                    width: 40px;
+                  }
+                }
+                &:nth-child(5) {
+                  .numbers_of_review {
+                    width: 120px;
+                  }
+                }
+                ul {
+                  overflow: hidden;
+                  padding-left: 72px;
+                  border-left: 1px solid #e8e8e8;
+                  &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                  }
+                  li {
+                    float: left;
+                    color: $logInColor;
+                    font-size: 12px;
+                    letter-spacing: -0.25px;
+                  }
+                  .numbers_of_review {
+                    display: inline-block;
+                    font-size: 0;
+                    width: 60px;
+                    height: 6px;
+                    border-radius: 4px;
+                    background-color: #d2d1d0;
+                    margin: 8px 7px;
+                  }
+                }
+              }
+            }
+          }
+        } //score
+        .review_photo {
+          overflow: hidden;
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+          li {
+            float: left;
+            margin-right: 12px;
+            &:last-child {
+              margin-right: 0;
             }
           }
         }
-      }
+      } //section_review
+      section.section_product {
+        .accordian {
+          margin-top: 48px;
+          h4 {
+            font-size: $fontMid;
+            letter-spacing: -1px;
+          }
+          ul {
+            margin-top: 16px;
+            border-top: 1px solid $mainColor;
+            li {
+              padding: 24px 0;
+              border-bottom: 1px solid #e8e8e8;
+              .ac_tit {
+                font-size: $fontRegular;
+                letter-spacing: -1px;
+                &:after {
+                  content: "";
+                  float: right;
+                  display: inline-block;
+                  width: 24px;
+                  height: 24px;
+                  background: url(../img/subpage/icon-chevron-down4.png) center no-repeat;
+                }
+              }
+              p {
+                position: relative;
+                padding: 24px 24px 24px 40px;
+                margin-top: 24px;
+                border-radius: 4px;
+                background: #f8f8f8;
+                font-size: $fontRegular;
+                letter-spacing: -1px;
+                color: #605d5b;
+                &:before {
+                  content: "";
+                  position: absolute;
+                  left: 25px;
+                  display: inline-block;
+                  width: 8px;
+                  height: 8px;
+                  background: url(../img/subpage/icon-reply.png) center no-repeat;
+                }
+              }
+            }
+          }
+        } //accordian
+        .tap2 {
+          margin-top: 48px;
+          .tap_menu {
+            margin-top: 16px;
+            .toggle_btn {
+              overflow: hidden;
+              float: right;
+              &:after {
+                content: "";
+                display: block;
+                clear: both;
+              }
+              li {
+                float: left;
+                margin-right: 32px;
+                &:last-child {
+                  margin-right: 0;
+                }
+                a {
+                  font-size: $fontRegular;
+                  color: #605d5b;
+                  img {
+                    margin-right: 7px;
+                    transform: translateY(4px);
+                  }
+                }
+              }
+            }
+          } //tap_menu
+          .pop_order {
+            li {
+              .review_top {
+                .answer {
+                  margin-right: 16px;
+                  font-weight: bold;
+                }
+                .answer.on {
+                  color: $primaryColor;
+                  font-weight: bold;
+                }
+              }
+              .ac_tit {
+                font-size: $fontRegular;
+                letter-spacing: -1px;
+                &:after {
+                  content: "";
+                  float: right;
+                  display: inline-block;
+                  width: 24px;
+                  height: 24px;
+                  background: url(../img/subpage/icon-chevron-down4.png) center no-repeat;
+                }
+              }
+              p {
+                position: relative;
+                padding: 24px 24px 24px 40px;
+                margin-top: 24px;
+                border-radius: 4px;
+                background: #f8f8f8;
+                font-size: $fontRegular;
+                letter-spacing: -1px;
+                color: #605d5b;
+                &:before {
+                  content: "";
+                  position: absolute;
+                  left: 25px;
+                  display: inline-block;
+                  width: 8px;
+                  height: 8px;
+                  background: url(../img/subpage/icon-reply.png) center no-repeat;
+                }
+              }
+            }
+          }
+        } //tap2
+      } //section_product
     } //.bottom_left
   } //.subpage_contents_wrap
 }
@@ -629,5 +855,280 @@ main.product_detail {
     font-size: $fontNormal;
     color: $logInColor;
     font-weight: normal;
+  }
+}
+.tap {
+  h4 {
+    font-size: $fontMid;
+    letter-spacing: -1px;
+  }
+  .tap_menu {
+    width: 100%;
+    height: 52px;
+    padding: 16px 0;
+    margin-top: 32px;
+    border-bottom: 1px solid $mainColor;
+    .tap_list {
+      float: left;
+      overflow: hidden;
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      li {
+        float: left;
+        &.on {
+          a {
+            font-weight: bold;
+            color: $mainColor;
+          }
+        }
+        &:after {
+          content: "|";
+          color: #e8e8e8;
+          margin: 0 16px;
+        }
+        &:last-child:after {
+          content: "";
+          display: none;
+        }
+        a {
+          font-size: $fontRegular;
+          color: $logInColor;
+        }
+      }
+    } //tap_list
+    .score_btn {
+      float: right;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url(../img/subpage/icon-star1.png);
+        margin-right: 4px;
+      }
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url(../img/subpage/icon-chevron-up.png);
+        transform: rotate(180deg) translateY(-3px);
+        margin-left: 4px;
+      }
+    }
+  } //.tap_manu
+  .pop_order {
+    > li {
+      padding: 24px 0;
+      border-bottom: 1px solid #e8e8e8;
+      .review_top {
+        overflow: hidden;
+        height: 20px;
+        line-height: 20px;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        > li {
+          float: left;
+        }
+        .star_score {
+          display: inline-block;
+          overflow: hidden;
+          margin-right: 16px;
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+          li {
+            float: left;
+          }
+        }
+        .nickname {
+          margin-right: 16px;
+          font-size: $fontRegular;
+          color: $logInColor;
+        }
+        .date {
+          font-size: $fontRegular;
+          color: $logInColor;
+        }
+      } //review_top
+      dl {
+        margin-top: 16px;
+        dt {
+          font-size: $fontRegular;
+          color: $logInColor;
+        }
+        dd {
+          font-size: $fontRegular;
+          margin-top: 8px;
+          letter-spacing: -1px;
+          button {
+            display: block;
+            margin-top: 16px;
+            color: #b8b6b4;
+            font-size: $fontRegular;
+            span {
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              background: url(../img/subpage/icon-chevron-down.png) center no-repeat;
+              background-size: contain;
+              font-size: 0;
+              margin-left: 3px;
+              float: right;
+              margin-top: 2px;
+            }
+          }
+        }
+      }
+      .photo_review {
+        margin-top: 24px;
+        overflow: hidden;
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        li {
+          float: left;
+          margin-right: 8px;
+          &:last-child {
+            margin-right: 0;
+          }
+          &:nth-child(3) {
+            display: inline-block;
+            width: 134px;
+            height: 134px;
+            background: #b8b6b4;
+            border-radius: 4px;
+            text-align: center;
+            a {
+              position: relative;
+              font-size: 14px;
+              color: #fff;
+              line-height: 164px;
+              &:before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: -31px;
+                left: 11px;
+                width: 32px;
+                height: 32px;
+                background: url(../img/subpage/icon-play-white.png) center no-repeat;
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+      .question {
+        height: 28px;
+        line-height: 28px;
+        margin-top: 24px;
+        > span {
+          font-size: $fontRegular;
+          color: $logInColor;
+          letter-spacing: -1px;
+        }
+        button {
+          width: 64px;
+          margin-left: 16px;
+          padding: 0 14px;
+          border-radius: 14px;
+          border: 1px solid #d2d1d0;
+          span {
+            font-size: 12px;
+            &:before {
+              content: "";
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              background: url(../img/subpage/icon-thumbs-up.png) center no-repeat;
+              background-size: contain;
+              margin-right: 2px;
+              transform: translateY(3px);
+            }
+          }
+        }
+      } //question
+      .question.on {
+        button {
+          border: 1px solid $primaryColor;
+          span {
+            color: $primaryColor;
+            &:before {
+              background: url(../img/subpage/icon-thumbs-up1.png) center no-repeat;
+            }
+          }
+        }
+      } //question.on
+    } //li
+  } //pop_order
+  .latest_order {
+  }
+  .page_numbering {
+    overflow: hidden;
+    width: 480px;
+    margin: 24px auto 0;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    li {
+      float: left;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: #fff;
+      color: #605d5b;
+      text-align: center;
+      padding: 5px;
+      border-radius: 4px;
+      margin-right: 8px;
+      &:nth-last-child(2) {
+        position: relative;
+        background: #fff;
+        a {
+          position: absolute;
+          display: inline-block;
+          font-size: 0;
+          width: 20px;
+          height: 20px;
+          background: url(../img/subpage/icon-chevron-right2.png) center no-repeat;
+          top: 6px;
+          left: 6px;
+        }
+      }
+      &:last-child {
+        position: relative;
+        background: #fff;
+        margin-right: 0;
+        a {
+          position: absolute;
+          display: inline-block;
+          font-size: 0;
+          width: 20px;
+          height: 20px;
+          background: url(../img/subpage/icon-chevron-double-right.png) center no-repeat;
+          top: 6px;
+          left: 6px;
+        }
+      }
+    }
+    li.on {
+      background: $primaryColor;
+      a {
+        color: #fff;
+      }
+    }
   }
 }
