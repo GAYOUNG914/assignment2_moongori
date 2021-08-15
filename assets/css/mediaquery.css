@@ -1511,8 +1511,8 @@
     background: url(../img/main/icon-pause.png) center no-repeat;
     cursor: pointer;
   }
-}*/
-
+}
+*/
 @media only screen and (min-width: 769px) and (max-width: 938px) {
   footer .footer .footer_mid {
     margin-left: 3.1825vw;
