@@ -546,6 +546,79 @@ main.product_detail .subpage_contents_wrap .bottom_right {
   float: right;
 }
 
+main.product_detail .subpage_contents_wrap .bottom_right .top_right {
+  float: right;
+  position: relative;
+  width: 100%;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .select_option_wrap .select_option {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #d2d1d0;
+  border-radius: 4px;
+  padding: 14px 20px;
+  margin-top: 12px;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .select_option_wrap .select_option:first-child {
+  margin-top: 0;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .select_option_wrap .select_option span {
+  font-size: 14px;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .select_option_wrap .select_option span:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/subpage/icon-chevron-down1.png) center no-repeat;
+  float: right;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .btns {
+  margin-top: 32px;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .btns button {
+  border-radius: 4px;
+  padding: 16px 24px;
+  height: 64px;
+  margin: 0 0 0 1px;
+  width: 64px;
+  border: 1px solid #d2d1d0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .btns button img {
+  width: 100%;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .btns button:nth-of-type(1) {
+  font-size: 0;
+  margin-left: 0;
+  padding: 16px;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .btns button:nth-of-type(2) {
+  width: 312px;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_right .top_right .btns button:nth-of-type(3) {
+  width: 100%;
+  margin-top: 8px;
+  background: #ff5442;
+  border: none;
+  color: #fff;
+}
+
 main.product_detail .subpage_contents_wrap .bottom_left {
   float: left;
   width: 864px;
@@ -867,6 +940,7 @@ main.product_detail .subpage_contents_wrap .bottom_left section.section_product 
 }
 
 main.product_detail .subpage_contents_wrap .bottom_left section.section_product .accordian ul li p {
+  display: none;
   position: relative;
   padding: 24px 24px 24px 40px;
   margin-top: 24px;
@@ -924,6 +998,14 @@ main.product_detail .subpage_contents_wrap .bottom_left section.section_product 
   margin-right: 7px;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
+}
+
+main.product_detail .subpage_contents_wrap .bottom_left section.section_product .tap2 .pop_order:nth-of-type(2) {
+  display: none;
+}
+
+main.product_detail .subpage_contents_wrap .bottom_left section.section_product .tap2 .pop_order:nth-of-type(3) {
+  display: none;
 }
 
 main.product_detail .subpage_contents_wrap .bottom_left section.section_product .tap2 .pop_order li:nth-child(3) .ac_tit:before {

@@ -1,0 +1,252 @@
+//font_size
+$fontSmall: 12px;
+$fontRegular: 14px;
+$fontNormal: 16px;
+$fontMid: 20px;
+
+//color
+$logInColor: #8e8c8a;
+$mainColor: #1c1814;
+$primaryColor: #00b076;
+
+//signup main start
+header .main_gnb h1 {
+  height: 45px;
+}
+main.login {
+  width: 480px;
+  margin: 0 auto;
+  .login_contents_wrap {
+    width: 416px;
+    margin: 0 auto;
+    padding-bottom: 96px;
+    .sign_up {
+      font-size: 38px;
+      letter-spacing: -2px;
+      font-weight: bold;
+    }
+    .sign_up_tap {
+      overflow: hidden;
+      margin-top: 48px;
+      width: 100%;
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      li {
+        float: left;
+        width: 50%;
+        height: 64px;
+        line-height: 64px;
+        text-align: center;
+        background: #f4f4f4;
+        &:first-child {
+          border-radius: 4px 0 0 4px;
+        }
+        &:last-child {
+          border-radius: 0 4px 4px 0;
+        }
+        a {
+          color: #605d60;
+        }
+      }
+      li.on {
+        background: #fff;
+        border: 1px solid $primaryColor;
+        a {
+          color: $primaryColor;
+          font-weight: bold;
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url(../img/sign_up/selection-controls-checkbox-01-selected.png) center no-repeat;
+            margin-right: 8px;
+            transform: translateY(6px);
+          }
+        }
+      }
+    } //sign_up_tap
+    .condition {
+      width: 100%;
+      padding: 20px;
+      background: #f8f8f8;
+      border-radius: 4px;
+      margin-top: 48px;
+      dt {
+        font-size: $fontRegular;
+        letter-spacing: -1px;
+        font-weight: bold;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 21px;
+          height: 21px;
+          background: url(../img/sign_up/icon-info.png);
+          margin-right: 8px;
+          transform: translateY(4px);
+        }
+      }
+      dd {
+        font-size: $fontRegular;
+        color: #605d60;
+        letter-spacing: -1px;
+        margin-top: 16px;
+      }
+    } //condition
+    .form_personal {
+      width: 100%;
+      padding-bottom: 48px;
+      border-bottom: 1px solid #e8e8e8;
+      li {
+        margin-top: 32px;
+        label {
+          display: block;
+          font-size: $fontRegular;
+          span {
+            color: #ff5442;
+          }
+        }
+        input {
+          width: 100%;
+          margin-top: 8px;
+          padding: 14px 20px;
+          border: 1px solid #d2d1d0;
+          border-radius: 4px;
+        }
+        select {
+          position: relative;
+          width: 120px;
+          height: 48px;
+          padding: 13px 12px 14px 20px;
+          border-radius: 4px;
+          margin-top: 8px;
+          font-size: 15px;
+          background: url(../img/sign_up/icon-chevron-down.png) right 12px center no-repeat;
+        }
+        input#number {
+          width: 284px;
+          margin-left: 5px;
+        }
+        button {
+          width: 100%;
+          margin-top: 12px;
+          padding: 12px 20px;
+          background: #d2d1d0;
+          border-radius: 4px;
+          text-align: center;
+          font-size: $fontNormal;
+          font-weight: bold;
+          color: #fff;
+        }
+      }
+    } //form_personal
+    .form_corporate {
+      padding-top: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid #e8e8e8;
+      .info {
+        font-size: 20px;
+        letter-spacing: -1px;
+      }
+      li {
+        margin-top: 24px;
+      }
+      label {
+        display: block;
+        font-size: $fontRegular;
+        span {
+          color: #ff5442;
+        }
+      }
+      input {
+        width: 100%;
+        margin-top: 8px;
+        padding: 14px 20px;
+        border: 1px solid #d2d1d0;
+        border-radius: 4px;
+      }
+      p {
+        position: relative;
+        padding-left: 20px;
+        margin-top: 24px;
+        font-size: $fontRegular;
+        letter-spacing: -1px;
+        color: $logInColor;
+        &:last-child {
+          margin-top: 8px;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          background: url(../img/sign_up/icon-bullet-small.png) center no-repeat;
+        }
+        a {
+          font-size: $fontRegular;
+          color: $logInColor;
+          text-decoration: underline;
+        }
+      }
+    } //form_corporate
+    .agreement {
+      margin-top: 48px;
+      li {
+        input[type="checkbox"] + label {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url(../img/sign_up/selection-controls-checkbox-02-unselected.png) left center no-repeat;
+        }
+        input[type="checkbox"]:checked + label {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url(../img/sign_up/selection-controls-checkbox-02-selected.png) left center no-repeat;
+        }
+        input[type="checkbox"] {
+          display: none;
+        }
+        &:nth-child(1) {
+          label {
+            font-size: $fontNormal;
+            font-weight: bold;
+            color: $mainColor;
+          }
+        }
+        &:nth-child(2) {
+          font-size: $fontRegular;
+          color: #605d60;
+          margin-top: 18px;
+        }
+        &:nth-child(3) {
+          font-size: $fontRegular;
+          color: #605d60;
+          margin-top: 12px;
+        }
+        label {
+          letter-spacing: -1px;
+          span {
+            color: #ff5442;
+          }
+        }
+      }
+    }
+    > button {
+      width: 100%;
+      height: 64px;
+      margin-top: 48px;
+      padding: 18px 24px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 4px;
+      background: $primaryColor;
+    }
+  }
+}
