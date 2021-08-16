@@ -461,8 +461,12 @@ main.product_detail {
     }
     .bottom_contents {
       overflow: hidden;
+      position: relative;
     }
     .bottom_right {
+      position: absolute;
+      top: 0;
+      right: 0;
       margin-top: 64px;
       width: 384px;
       float: right;

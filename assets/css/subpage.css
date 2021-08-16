@@ -538,9 +538,13 @@ main.product_detail .subpage_contents_wrap .subpage_list_wrap_line {
 
 main.product_detail .subpage_contents_wrap .bottom_contents {
   overflow: hidden;
+  position: relative;
 }
 
 main.product_detail .subpage_contents_wrap .bottom_right {
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-top: 64px;
   width: 384px;
   float: right;

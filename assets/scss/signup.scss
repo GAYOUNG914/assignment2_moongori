@@ -198,15 +198,15 @@ main.login {
       li {
         input[type="checkbox"] + label {
           display: inline-block;
-          width: 20px;
-          height: 20px;
+          padding-left: 32px;
           background: url(../img/sign_up/selection-controls-checkbox-02-unselected.png) left center no-repeat;
+          cursor: pointer;
         }
         input[type="checkbox"]:checked + label {
           display: inline-block;
-          width: 20px;
-          height: 20px;
-          background: url(../img/sign_up/selection-controls-checkbox-02-selected.png) left center no-repeat;
+          padding-left: 32px;
+          background: url(../img/sign_up/selection-controls-checkbox-01-selected.png) left center no-repeat;
+          cursor: pointer;
         }
         input[type="checkbox"] {
           display: none;

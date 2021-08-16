@@ -139,4 +139,19 @@ $(function () {
     $(".tap2 .pop_order").hide();
     $(".tap2 .pop_order").eq(idx).show();
   });
+
+  //따라다니는 bottom_right
+  let currentPosition = parseInt($(".bottom_right").offset().top);
+  console.log(currentPosition);
+  $(window).scroll(function () {
+    let position = $(window).scrollTop();
+    $(".bottom_right")
+      .stop()
+      .animate({ top: position - 1500 + "px" });
+    if (currentPosition < "1819") {
+      $(window).scroll(function () {
+        return false; //이벤트중지어케함
+      });
+    }
+  });
 });

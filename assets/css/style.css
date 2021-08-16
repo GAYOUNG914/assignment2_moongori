@@ -3515,9 +3515,13 @@ main.product_detail .subpage_contents_wrap .subpage_list_wrap_line {
 
 main.product_detail .subpage_contents_wrap .bottom_contents {
   overflow: hidden;
+  position: relative;
 }
 
 main.product_detail .subpage_contents_wrap .bottom_right {
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-top: 64px;
   width: 384px;
   float: right;
@@ -4831,16 +4835,16 @@ main.login .login_contents_wrap .agreement {
 
 main.login .login_contents_wrap .agreement li input[type="checkbox"] + label {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  padding-left: 32px;
   background: url(../img/sign_up/selection-controls-checkbox-02-unselected.png) left center no-repeat;
+  cursor: pointer;
 }
 
 main.login .login_contents_wrap .agreement li input[type="checkbox"]:checked + label {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url(../img/sign_up/selection-controls-checkbox-02-selected.png) left center no-repeat;
+  padding-left: 32px;
+  background: url(../img/sign_up/selection-controls-checkbox-01-selected.png) left center no-repeat;
+  cursor: pointer;
 }
 
 main.login .login_contents_wrap .agreement li input[type="checkbox"] {
