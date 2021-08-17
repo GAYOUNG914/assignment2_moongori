@@ -44,17 +44,19 @@
             외 업종의 사업자분들께서는 일반회원으로 가입해 주세요.
           </dd>
         </dl>
-        <ul class="form_personal">
-          <li>
+        <dl class="form_personal">
+          <dt>
             <label for="name">이름<span>*</span></label>
-            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="14" />
-          </li>
-          <li>
+          </dt>
+          <dd><input type="text" id="name" name="name" required minlength="4" maxlength="8" size="14" /></dd>
+          <dt>
             <label for="email">이메일<span>*</span></label>
-            <input type="email" id="email" name="email" requiredsize="14" />
-          </li>
-          <li>
+          </dt>
+          <dd><input type="email" id="email" name="email" requiredsize="14" /></dd>
+          <dt>
             <label for="id">아이디<span>*</span></label>
+          </dt>
+          <dd>
             <input
               type="text"
               id="id"
@@ -65,9 +67,11 @@
               size="14"
               placeholder="아이디 입력"
             />
-          </li>
-          <li>
+          </dd>
+          <dt>
             <label for="password">비밀번호<span>*</span></label>
+          </dt>
+          <dd>
             <input
               type="password"
               id="password"
@@ -78,6 +82,8 @@
               size="14"
               placeholder="새 비밀번호"
             />
+          </dd>
+          <dd>
             <input
               type="password"
               id="password"
@@ -88,14 +94,18 @@
               size="14"
               placeholder="비밀번호 확인"
             />
-          </li>
-          <li>
+          </dd>
+          <dt>
             <label for="number">연락처<span>*</span></label>
+          </dt>
+          <dd>
             <select name="number" id="phonenumber">
               <option value="010">010</option>
               <option value="010">016</option>
               <option value="010">017</option>
             </select>
+          </dd>
+          <dd>
             <input
               type="tel"
               id="number"
@@ -106,21 +116,25 @@
               size="14"
               placeholder="숫자만 입력"
             />
-            <button>인증번호 요청</button>
-          </li>
-        </ul>
+          </dd>
+          <dd><button>인증번호 요청</button></dd>
+        </dl>
         <div class="form_corporate">
           <h3 class="info">기업정보</h3>
-          <ul class="corporate">
-            <li>
+          <dl class="corporate">
+            <dt>
               <label for="representor">대표자<span>*</span></label>
+            </dt>
+            <dd>
               <input type="text" id="representor" name="representor" required minlength="4" maxlength="8" size="14" />
-            </li>
-            <li>
+            </dd>
+            <dt>
               <label for="co_number">사업자 등록번호<span>*</span></label>
+            </dt>
+            <dd>
               <input type="text" id="co_number" name="co_number" required minlength="4" maxlength="8" size="14" />
-            </li>
-          </ul>
+            </dd>
+          </dl>
           <p>
             회원가입 후 <a href="mailto:help@moongori.com">help@moongori.com</a>로 사업자등록증 사본을 보내주시면 확인
             후에 가입 승인 처리가 가능합니다.

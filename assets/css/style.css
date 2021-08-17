@@ -3205,9 +3205,11 @@ main.product_detail .subpage_contents_wrap .top_con .top_right .delivery:after {
 main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li {
   float: left;
   margin-right: 12px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:first-child a {
+main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:first-child {
   color: #ff5442;
 }
 
@@ -3218,11 +3220,6 @@ main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:last
   font-size: 14px;
   position: absolute;
   right: 0;
-}
-
-main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li a {
-  font-size: 14px;
-  font-weight: bold;
 }
 
 main.product_detail .subpage_contents_wrap .top_con .top_right .main_tit {
@@ -4658,6 +4655,9 @@ main.login .login_contents_wrap .sign_up_tap li:last-child {
 }
 
 main.login .login_contents_wrap .sign_up_tap li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   color: #605d60;
 }
 
@@ -4720,20 +4720,28 @@ main.login .login_contents_wrap .form_personal {
   border-bottom: 1px solid #e8e8e8;
 }
 
-main.login .login_contents_wrap .form_personal li {
+main.login .login_contents_wrap .form_personal dt {
   margin-top: 32px;
 }
 
-main.login .login_contents_wrap .form_personal li label {
+main.login .login_contents_wrap .form_personal dt label {
   display: block;
   font-size: 14px;
 }
 
-main.login .login_contents_wrap .form_personal li label span {
+main.login .login_contents_wrap .form_personal dt label span {
   color: #ff5442;
 }
 
-main.login .login_contents_wrap .form_personal li input {
+main.login .login_contents_wrap .form_personal dd:nth-last-child(2) {
+  display: inline-block;
+}
+
+main.login .login_contents_wrap .form_personal dd:nth-last-child(3) {
+  display: inline-block;
+}
+
+main.login .login_contents_wrap .form_personal dd input {
   width: 100%;
   margin-top: 8px;
   padding: 14px 20px;
@@ -4741,7 +4749,7 @@ main.login .login_contents_wrap .form_personal li input {
   border-radius: 4px;
 }
 
-main.login .login_contents_wrap .form_personal li select {
+main.login .login_contents_wrap .form_personal dd select {
   position: relative;
   width: 120px;
   height: 48px;
@@ -4752,12 +4760,12 @@ main.login .login_contents_wrap .form_personal li select {
   background: url(../img/sign_up/icon-chevron-down.png) right 12px center no-repeat;
 }
 
-main.login .login_contents_wrap .form_personal li input#number {
+main.login .login_contents_wrap .form_personal dd input#number {
   width: 284px;
   margin-left: 5px;
 }
 
-main.login .login_contents_wrap .form_personal li button {
+main.login .login_contents_wrap .form_personal dd button {
   width: 100%;
   margin-top: 12px;
   padding: 12px 20px;
@@ -4780,7 +4788,7 @@ main.login .login_contents_wrap .form_corporate .info {
   letter-spacing: -1px;
 }
 
-main.login .login_contents_wrap .form_corporate li {
+main.login .login_contents_wrap .form_corporate dt {
   margin-top: 24px;
 }
 

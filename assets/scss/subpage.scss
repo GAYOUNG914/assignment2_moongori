@@ -192,10 +192,10 @@ main.product_detail {
           li {
             float: left;
             margin-right: 12px;
+            font-size: $fontRegular;
+            font-weight: bold;
             &:first-child {
-              a {
-                color: #ff5442;
-              }
+              color: #ff5442;
             }
             &:last-child:after {
               content: "1천개 이상 판매";
@@ -204,10 +204,6 @@ main.product_detail {
               font-size: $fontRegular;
               position: absolute;
               right: 0;
-            }
-            a {
-              font-size: $fontRegular;
-              font-weight: bold;
             }
           }
         } //delivery

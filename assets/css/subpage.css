@@ -228,9 +228,11 @@ main.product_detail .subpage_contents_wrap .top_con .top_right .delivery:after {
 main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li {
   float: left;
   margin-right: 12px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:first-child a {
+main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:first-child {
   color: #ff5442;
 }
 
@@ -241,11 +243,6 @@ main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:last
   font-size: 14px;
   position: absolute;
   right: 0;
-}
-
-main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li a {
-  font-size: 14px;
-  font-weight: bold;
 }
 
 main.product_detail .subpage_contents_wrap .top_con .top_right .main_tit {

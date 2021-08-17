@@ -48,6 +48,9 @@ main.login {
           border-radius: 0 4px 4px 0;
         }
         a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
           color: #605d60;
         }
       }
@@ -100,7 +103,7 @@ main.login {
       width: 100%;
       padding-bottom: 48px;
       border-bottom: 1px solid #e8e8e8;
-      li {
+      dt {
         margin-top: 32px;
         label {
           display: block;
@@ -108,6 +111,14 @@ main.login {
           span {
             color: #ff5442;
           }
+        }
+      }
+      dd {
+        &:nth-last-child(2) {
+          display: inline-block;
+        }
+        &:nth-last-child(3) {
+          display: inline-block;
         }
         input {
           width: 100%;
@@ -151,7 +162,7 @@ main.login {
         font-size: 20px;
         letter-spacing: -1px;
       }
-      li {
+      dt {
         margin-top: 24px;
       }
       label {
