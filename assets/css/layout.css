@@ -145,6 +145,10 @@ header fieldset {
   padding: 12px 0 10px 8px;
 }
 
+header fieldset legend {
+  font-size: 0;
+}
+
 header fieldset input {
   border: none;
 }
@@ -216,8 +220,7 @@ header .main_gnb .icons > li:nth-child(3) > a > span {
   background: #ff5442;
 }
 
-header .main_gnb .icons > li:nth-child(3) > a > span:after {
-  content: "3";
+header .main_gnb .icons > li:nth-child(3) > a > span > span {
   position: absolute;
   right: 6px;
   bottom: 1px;

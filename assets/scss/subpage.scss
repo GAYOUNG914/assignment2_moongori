@@ -197,8 +197,7 @@ main.product_detail {
             &:first-child {
               color: #ff5442;
             }
-            &:last-child:after {
-              content: "1천개 이상 판매";
+            &:last-child {
               float: right;
               color: $logInColor;
               font-size: $fontRegular;
@@ -210,11 +209,16 @@ main.product_detail {
         .main_tit {
           font-size: 32px;
           margin-top: 24px;
-          .share {
-            position: absolute;
-            top: 44px;
-            right: 0;
-          }
+        }
+        .share {
+          display: inline-block;
+          position: absolute;
+          top: 47px;
+          right: 0;
+          width: 40px;
+          height: 40px;
+          background: url("../img/subpage/icon-share.png") center no-repeat;
+          font-size: 0;
         }
         .stars {
           overflow: hidden;

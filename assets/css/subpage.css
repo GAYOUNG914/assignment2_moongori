@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .state_page_wrap {
   max-width: 1440px;
   margin: 0 auto;
@@ -236,8 +235,7 @@ main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:firs
   color: #ff5442;
 }
 
-main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:last-child:after {
-  content: "1천개 이상 판매";
+main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:last-child {
   float: right;
   color: #8e8c8a;
   font-size: 14px;
@@ -250,10 +248,15 @@ main.product_detail .subpage_contents_wrap .top_con .top_right .main_tit {
   margin-top: 24px;
 }
 
-main.product_detail .subpage_contents_wrap .top_con .top_right .main_tit .share {
+main.product_detail .subpage_contents_wrap .top_con .top_right .share {
+  display: inline-block;
   position: absolute;
-  top: 44px;
+  top: 47px;
   right: 0;
+  width: 40px;
+  height: 40px;
+  background: url("../img/subpage/icon-share.png") center no-repeat;
+  font-size: 0;
 }
 
 main.product_detail .subpage_contents_wrap .top_con .top_right .stars {

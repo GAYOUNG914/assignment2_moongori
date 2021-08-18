@@ -206,41 +206,43 @@ main.login {
     } //form_corporate
     .agreement {
       margin-top: 48px;
-      li {
-        input[type="checkbox"] + label {
-          display: inline-block;
-          padding-left: 32px;
-          background: url(../img/sign_up/selection-controls-checkbox-02-unselected.png) left center no-repeat;
-          cursor: pointer;
-        }
-        input[type="checkbox"]:checked + label {
-          display: inline-block;
-          padding-left: 32px;
-          background: url(../img/sign_up/selection-controls-checkbox-01-selected.png) left center no-repeat;
-          cursor: pointer;
-        }
-        input[type="checkbox"] {
-          display: none;
-        }
-        &:nth-child(1) {
-          label {
-            font-size: $fontNormal;
-            font-weight: bold;
-            color: $mainColor;
-          }
-        }
-        &:nth-child(2) {
-          font-size: $fontRegular;
-          color: #605d60;
-          margin-top: 18px;
-        }
-        &:nth-child(3) {
-          font-size: $fontRegular;
-          color: #605d60;
-          margin-top: 12px;
-        }
+      legend {
+        font-size: 0;
+      }
+      input[type="checkbox"] + label {
+        display: inline-block;
+        padding-left: 32px;
+        background: url(../img/sign_up/selection-controls-checkbox-02-unselected.png) left center no-repeat;
+        cursor: pointer;
+      }
+      input[type="checkbox"]:checked + label {
+        display: inline-block;
+        padding-left: 32px;
+        background: url(../img/sign_up/selection-controls-checkbox-01-selected.png) left center no-repeat;
+        cursor: pointer;
+      }
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      > label {
+        font-size: $fontNormal;
+        font-weight: bold;
+        color: $mainColor;
+      }
+      div {
         label {
           letter-spacing: -1px;
+          &:nth-of-type(1) {
+            font-size: $fontRegular;
+            color: #605d60;
+            margin-top: 18px;
+          }
+          &:nth-of-type(2) {
+            font-size: $fontRegular;
+            color: #605d60;
+            margin-top: 12px;
+          }
           span {
             color: #ff5442;
           }

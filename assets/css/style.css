@@ -611,6 +611,10 @@ header fieldset {
   padding: 12px 0 10px 8px;
 }
 
+header fieldset legend {
+  font-size: 0;
+}
+
 header fieldset input {
   border: none;
 }
@@ -682,8 +686,7 @@ header .main_gnb .icons > li:nth-child(3) > a > span {
   background: #ff5442;
 }
 
-header .main_gnb .icons > li:nth-child(3) > a > span:after {
-  content: "3";
+header .main_gnb .icons > li:nth-child(3) > a > span > span {
   position: absolute;
   right: 6px;
   bottom: 1px;
@@ -3213,8 +3216,7 @@ main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:firs
   color: #ff5442;
 }
 
-main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:last-child:after {
-  content: "1천개 이상 판매";
+main.product_detail .subpage_contents_wrap .top_con .top_right .delivery li:last-child {
   float: right;
   color: #8e8c8a;
   font-size: 14px;
@@ -3227,10 +3229,15 @@ main.product_detail .subpage_contents_wrap .top_con .top_right .main_tit {
   margin-top: 24px;
 }
 
-main.product_detail .subpage_contents_wrap .top_con .top_right .main_tit .share {
+main.product_detail .subpage_contents_wrap .top_con .top_right .share {
+  display: inline-block;
   position: absolute;
-  top: 44px;
+  top: 47px;
   right: 0;
+  width: 40px;
+  height: 40px;
+  background: url("../img/subpage/icon-share.png") center no-repeat;
+  font-size: 0;
 }
 
 main.product_detail .subpage_contents_wrap .top_con .top_right .stars {
@@ -4841,47 +4848,51 @@ main.login .login_contents_wrap .agreement {
   margin-top: 48px;
 }
 
-main.login .login_contents_wrap .agreement li input[type="checkbox"] + label {
+main.login .login_contents_wrap .agreement legend {
+  font-size: 0;
+}
+
+main.login .login_contents_wrap .agreement input[type="checkbox"] + label {
   display: inline-block;
   padding-left: 32px;
   background: url(../img/sign_up/selection-controls-checkbox-02-unselected.png) left center no-repeat;
   cursor: pointer;
 }
 
-main.login .login_contents_wrap .agreement li input[type="checkbox"]:checked + label {
+main.login .login_contents_wrap .agreement input[type="checkbox"]:checked + label {
   display: inline-block;
   padding-left: 32px;
   background: url(../img/sign_up/selection-controls-checkbox-01-selected.png) left center no-repeat;
   cursor: pointer;
 }
 
-main.login .login_contents_wrap .agreement li input[type="checkbox"] {
+main.login .login_contents_wrap .agreement input[type="checkbox"] {
   display: none;
 }
 
-main.login .login_contents_wrap .agreement li:nth-child(1) label {
+main.login .login_contents_wrap .agreement > label {
   font-size: 16px;
   font-weight: bold;
   color: #1c1814;
 }
 
-main.login .login_contents_wrap .agreement li:nth-child(2) {
+main.login .login_contents_wrap .agreement div label {
+  letter-spacing: -1px;
+}
+
+main.login .login_contents_wrap .agreement div label:nth-of-type(1) {
   font-size: 14px;
   color: #605d60;
   margin-top: 18px;
 }
 
-main.login .login_contents_wrap .agreement li:nth-child(3) {
+main.login .login_contents_wrap .agreement div label:nth-of-type(2) {
   font-size: 14px;
   color: #605d60;
   margin-top: 12px;
 }
 
-main.login .login_contents_wrap .agreement li label {
-  letter-spacing: -1px;
-}
-
-main.login .login_contents_wrap .agreement li label span {
+main.login .login_contents_wrap .agreement div label span {
   color: #ff5442;
 }
 

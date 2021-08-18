@@ -235,47 +235,51 @@ main.login .login_contents_wrap .agreement {
   margin-top: 48px;
 }
 
-main.login .login_contents_wrap .agreement li input[type="checkbox"] + label {
+main.login .login_contents_wrap .agreement legend {
+  font-size: 0;
+}
+
+main.login .login_contents_wrap .agreement input[type="checkbox"] + label {
   display: inline-block;
   padding-left: 32px;
   background: url(../img/sign_up/selection-controls-checkbox-02-unselected.png) left center no-repeat;
   cursor: pointer;
 }
 
-main.login .login_contents_wrap .agreement li input[type="checkbox"]:checked + label {
+main.login .login_contents_wrap .agreement input[type="checkbox"]:checked + label {
   display: inline-block;
   padding-left: 32px;
   background: url(../img/sign_up/selection-controls-checkbox-01-selected.png) left center no-repeat;
   cursor: pointer;
 }
 
-main.login .login_contents_wrap .agreement li input[type="checkbox"] {
+main.login .login_contents_wrap .agreement input[type="checkbox"] {
   display: none;
 }
 
-main.login .login_contents_wrap .agreement li:nth-child(1) label {
+main.login .login_contents_wrap .agreement > label {
   font-size: 16px;
   font-weight: bold;
   color: #1c1814;
 }
 
-main.login .login_contents_wrap .agreement li:nth-child(2) {
+main.login .login_contents_wrap .agreement div label {
+  letter-spacing: -1px;
+}
+
+main.login .login_contents_wrap .agreement div label:nth-of-type(1) {
   font-size: 14px;
   color: #605d60;
   margin-top: 18px;
 }
 
-main.login .login_contents_wrap .agreement li:nth-child(3) {
+main.login .login_contents_wrap .agreement div label:nth-of-type(2) {
   font-size: 14px;
   color: #605d60;
   margin-top: 12px;
 }
 
-main.login .login_contents_wrap .agreement li label {
-  letter-spacing: -1px;
-}
-
-main.login .login_contents_wrap .agreement li label span {
+main.login .login_contents_wrap .agreement div label span {
   color: #ff5442;
 }
 
