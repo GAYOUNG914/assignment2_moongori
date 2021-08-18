@@ -372,23 +372,15 @@ main.product_detail {
         .select_option_wrap {
           margin-top: 32px;
           .select_option {
+            display: block;
             width: 100%;
             height: 48px;
             border: 1px solid #d2d1d0;
             border-radius: 4px;
             padding: 14px 20px;
             margin-top: 12px;
-            span {
-              font-size: $fontRegular;
-              &:after {
-                content: "";
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background: url(../img/subpage/icon-chevron-down1.png) center no-repeat;
-                float: right;
-              }
-            }
+            font-size: $fontRegular;
+            background: url(../img/subpage/icon-chevron-down1.png) right 20px center no-repeat;
           } //.select_option
         } //.select_option_wrap
         .btns {

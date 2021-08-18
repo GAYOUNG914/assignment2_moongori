@@ -3416,25 +3416,15 @@ main.product_detail .subpage_contents_wrap .top_con .top_right .select_option_wr
 }
 
 main.product_detail .subpage_contents_wrap .top_con .top_right .select_option_wrap .select_option {
+  display: block;
   width: 100%;
   height: 48px;
   border: 1px solid #d2d1d0;
   border-radius: 4px;
   padding: 14px 20px;
   margin-top: 12px;
-}
-
-main.product_detail .subpage_contents_wrap .top_con .top_right .select_option_wrap .select_option span {
   font-size: 14px;
-}
-
-main.product_detail .subpage_contents_wrap .top_con .top_right .select_option_wrap .select_option span:after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url(../img/subpage/icon-chevron-down1.png) center no-repeat;
-  float: right;
+  background: url(../img/subpage/icon-chevron-down1.png) right 20px center no-repeat;
 }
 
 main.product_detail .subpage_contents_wrap .top_con .top_right .btns {
