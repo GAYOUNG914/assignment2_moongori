@@ -66,11 +66,10 @@ $(function () {
 
   // sub_ookmark
   $(".bookmark_btn").click(function () {
-    // console.log($(this).children().attr("src")); 왜 =를 두 개 붙여야 실행되는거지..?
-    if ($(this).children().attr("src") == "./assets/img/main/icon-scrap-fill.png") {
-      $(this).children().attr("src", "./assets/img/subpage/icon-scrap-line.png");
+    if ($(this).is(".on")) {
+      $(this).removeClass("on");
     } else {
-      $(this).children().attr("src", "./assets/img/main/icon-scrap-fill.png");
+      $(this).addClass("on");
     }
   });
 
@@ -148,7 +147,7 @@ $(function () {
     $(".bottom_right")
       .stop()
       .animate({ top: position - 1500 + "px" });
-    if (currentPosition < "1819") {
+    if (currentPosition < 1819) {
       $(window).scroll(function () {
         return false; //이벤트중지어케함
       });
