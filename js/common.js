@@ -143,14 +143,12 @@ $(function () {
   let currentPosition = parseInt($(".bottom_right").offset().top);
   console.log(currentPosition);
   $(window).scroll(function () {
-    let position = $(window).scrollTop();
-    $(".bottom_right")
-      .stop()
-      .animate({ top: position - 1500 + "px" });
-    if (currentPosition < 1819) {
-      $(window).scroll(function () {
-        return false; //이벤트중지어케함
-      });
+    let ST = $(window).scrollTop();
+
+    if (currentPosition < ST) {
+      $(".bottom_right").css({ top: ST - currentPosition + 20 });
+    } else {
+      $(".bottom_right").css({ top: 0 });
     }
   });
 });

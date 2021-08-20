@@ -3513,15 +3513,14 @@ main.product_detail .subpage_contents_wrap .subpage_list_wrap_line {
 main.product_detail .subpage_contents_wrap .bottom_contents {
   overflow: hidden;
   position: relative;
+  margin-top: 64px;
 }
 
 main.product_detail .subpage_contents_wrap .bottom_right {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 64px;
   width: 384px;
-  float: right;
 }
 
 main.product_detail .subpage_contents_wrap .bottom_right .top_right {
@@ -3600,7 +3599,6 @@ main.product_detail .subpage_contents_wrap .bottom_right .top_right .btns button
 main.product_detail .subpage_contents_wrap .bottom_left {
   float: left;
   width: 864px;
-  margin-top: 64px;
 }
 
 main.product_detail .subpage_contents_wrap .bottom_left .bottom_left_img {
