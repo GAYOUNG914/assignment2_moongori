@@ -2,7 +2,7 @@
 /* style.css 미디어쿼리 vw 계산기 변환 후 복붙*/
 
 /*index.html의 @media screen and (min-width: 769px) and (max-width: 1340px) 잠시 주석*/
-/*
+
 @media screen and (min-width: 769px) and (max-width: 1340px) {
   .header_bg {
     width: 100%;
@@ -1512,7 +1512,7 @@
     cursor: pointer;
   }
 }
-*/
+
 @media only screen and (min-width: 769px) and (max-width: 938px) {
   footer .footer .footer_mid {
     margin-left: 3.1825vw;
